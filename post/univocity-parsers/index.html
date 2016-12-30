@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<title>Posts&middot; Krzysztof Góralski</title>
+	<title>Univocity Parsers Library&middot; Krzysztof Góralski</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Krzysztof Góralski">
@@ -16,8 +16,7 @@
 	<link rel="shortcut icon" href="https://kgoralski.github.io/favicon.ico" type="image/x-icon">
 
 	<!-- RSS -->
-	<link href="https://kgoralski.github.io/post/index.xml" rel="alternate" type="application/rss+xml" title="Krzysztof Góralski" />
-	  	<link href="https://kgoralski.github.io/post/index.xml" rel="feed" type="application/rss+xml" title="Krzysztof Góralski" />
+	
 
 	<!-- Font Awesome -->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
@@ -120,16 +119,10 @@
 
 
     <div class="content">
-    <div class="posts">
-	
-	<div class="post-teaser">
+    <article>
 		<header>
-		    <h1>
-		    <a class="post-link" href="https://kgoralski.github.io/post/univocity-parsers/">
-		        Univocity Parsers Library
-		    </a>
-		    </h1>
-		    <p class="meta">
+			<h1 class="title">Univocity Parsers Library</h1>
+			<p class="meta">
     August 25, 2016 &middot; 1 minute read
 
     
@@ -141,74 +134,72 @@
 
 		</header>
 
-		<div class="excerpt">
-			Very good parsing library
-			
-			<br>
-			<a class="button" href="https://kgoralski.github.io/post/univocity-parsers/">
-				Continue reading
-			</a>
-		</div>
-	</div><div class="post-teaser">
-		<header>
-		    <h1>
-		    <a class="post-link" href="https://kgoralski.github.io/post/books/">
-		        My programming books
-		    </a>
-		    </h1>
-		    <p class="meta">
-    July 31, 2016 &middot; 1 minute read
+	<section class="post-content">
+		<p><a href="http://www.univocity.com/">Official Website</a></p>
 
-    
-        &middot; Tags:
-            <a href="https://kgoralski.github.io/tags/books">books</a>
-            
-</p>
+<p><a href="https://mvnrepository.com/artifact/com.univocity/univocity-parsers">Maven Repository</a></p>
 
-		</header>
+<p>Below you can find how to parse .csv file with univocity library.</p>
 
-		<div class="excerpt">
-			Here you can find a list of my programming books
-			
-			<br>
-			<a class="button" href="https://kgoralski.github.io/post/books/">
-				Continue reading
-			</a>
-		</div>
-	</div><div class="post-teaser">
-		<header>
-		    <h1>
-		    <a class="post-link" href="https://kgoralski.github.io/post/rxjava-basics/">
-		        RxJava Basics
-		    </a>
-		    </h1>
-		    <p class="meta">
-    February 28, 2016 &middot; 4 minute read
+<pre><code class="language-java">public class ExampleCsvToPojoParser {
+   
+    private final Logger logger = LoggerFactory.getLogger(CsvToPojoParser.class);
+   
+    public &lt;T&gt; List&lt;T&gt; parseFileToPojo(Class&lt;T&gt; clazz, String fileName) {
+   
+        BeanListProcessor&lt;T&gt; rowProcessor = new BeanListProcessor&lt;T&gt;(clazz);
+   
+        CsvParserSettings parserSettings = new CsvParserSettings();
+   
+        parserSettings.setRowProcessor(rowProcessor);
+        parserSettings.setHeaderExtractionEnabled(true);
+        parserSettings.setLineSeparatorDetectionEnabled(true);
+        parserSettings.setSkipEmptyLines(true);
+   
+        CsvParser parser = new CsvParser(parserSettings);
+        try (InputStream resourceAsStream = this.getClass().getClassLoader().getResourceAsStream(fileName)) {
+            parser.parse(resourceAsStream);
+        } catch (IOException e) {
+            logger.error(&quot;Cannot read file &quot; + fileName, e );
+        }
+        return rowProcessor.getBeans();
+    }
+}
+</code></pre>
 
-    
-        &middot; Tags:
-            <a href="https://kgoralski.github.io/tags/java">Java</a>
-            , <a href="https://kgoralski.github.io/tags/rxjava">RxJava</a>
-            
-</p>
+<p>Then you can put there class like this (which will match the file):</p>
 
-		</header>
+<pre><code class="language-java">public class Users {
+   
+    @Trim
+    @NullString(nulls = { &quot; &quot;, &quot;&quot; })
+    @Parsed(field = &quot;USER_ID&quot;)
+    private Long userId;
+    @Trim
+    @NullString(nulls = { &quot; &quot;, &quot;&quot; })
+    @Parsed(field = &quot;USER_NAME&quot;)
+    private String userName;
+    //getters &amp; setters
+}
+</code></pre>
 
-		<div class="excerpt">
-			Quick introduction into RxJava
-			
-			<br>
-			<a class="button" href="https://kgoralski.github.io/post/rxjava-basics/">
-				Continue reading
-			</a>
-		</div>
-	</div>
-</div>
+	</section>
 
-	<div class="pagination">
-	
-</div>
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'kgoralski';
+    var disqus_identifier = 'https:\/\/kgoralski.github.io\/post\/univocity-parsers\/';
+    var disqus_title = 'Univocity Parsers Library';
+    var disqus_url = 'https:\/\/kgoralski.github.io\/post\/univocity-parsers\/';
 
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
 
     <footer class="site-footer">

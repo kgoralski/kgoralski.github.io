@@ -7,8 +7,64 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>[Krzysztof Góralski](https://kgoralski.github.io/). Released under the MIT license&lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
-    <lastBuildDate>Sun, 31 Jul 2016 08:41:23 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 25 Aug 2016 10:35:47 +0100</lastBuildDate>
     <atom:link href="https://kgoralski.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Univocity Parsers Library</title>
+      <link>https://kgoralski.github.io/post/univocity-parsers/</link>
+      <pubDate>Thu, 25 Aug 2016 10:35:47 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/univocity-parsers/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.univocity.com/&#34;&gt;Official Website&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://mvnrepository.com/artifact/com.univocity/univocity-parsers&#34;&gt;Maven Repository&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Below you can find how to parse .csv file with univocity library.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public class ExampleCsvToPojoParser {
+   
+    private final Logger logger = LoggerFactory.getLogger(CsvToPojoParser.class);
+   
+    public &amp;lt;T&amp;gt; List&amp;lt;T&amp;gt; parseFileToPojo(Class&amp;lt;T&amp;gt; clazz, String fileName) {
+   
+        BeanListProcessor&amp;lt;T&amp;gt; rowProcessor = new BeanListProcessor&amp;lt;T&amp;gt;(clazz);
+   
+        CsvParserSettings parserSettings = new CsvParserSettings();
+   
+        parserSettings.setRowProcessor(rowProcessor);
+        parserSettings.setHeaderExtractionEnabled(true);
+        parserSettings.setLineSeparatorDetectionEnabled(true);
+        parserSettings.setSkipEmptyLines(true);
+   
+        CsvParser parser = new CsvParser(parserSettings);
+        try (InputStream resourceAsStream = this.getClass().getClassLoader().getResourceAsStream(fileName)) {
+            parser.parse(resourceAsStream);
+        } catch (IOException e) {
+            logger.error(&amp;quot;Cannot read file &amp;quot; + fileName, e );
+        }
+        return rowProcessor.getBeans();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then you can put there class like this (which will match the file):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public class Users {
+   
+    @Trim
+    @NullString(nulls = { &amp;quot; &amp;quot;, &amp;quot;&amp;quot; })
+    @Parsed(field = &amp;quot;USER_ID&amp;quot;)
+    private Long userId;
+    @Trim
+    @NullString(nulls = { &amp;quot; &amp;quot;, &amp;quot;&amp;quot; })
+    @Parsed(field = &amp;quot;USER_NAME&amp;quot;)
+    private String userName;
+    //getters &amp;amp; setters
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>My programming books</title>
