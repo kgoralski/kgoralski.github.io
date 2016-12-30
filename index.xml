@@ -7,8 +7,71 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>[Krzysztof Góralski](https://kgoralski.github.io/). Released under the MIT license&lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
-    <lastBuildDate>Thu, 25 Aug 2016 10:35:47 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 04 Sep 2016 10:35:47 +0100</lastBuildDate>
     <atom:link href="https://kgoralski.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Go Language - First Impressions</title>
+      <link>https://kgoralski.github.io/post/go-impressions/</link>
+      <pubDate>Sun, 04 Sep 2016 10:35:47 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/go-impressions/</guid>
+      <description>&lt;p&gt;Just wrote something small with Go Language. Simple CRUD/webservice with MySQL using gorilla mux and sqlx, but it is almost plain golang in dockerized environment. If anything wrong about it, tell me. If you know polish language you can check also this link: &lt;a href=&#34;http://www.consdata.pl/blog/12-pirewsze-kroki-z-golang&#34;&gt;http://www.consdata.pl/blog/12-pirewsze-kroki-z-golang&lt;/a&gt; ;)&lt;/p&gt;
+
+&lt;p&gt;Here are my impressions about it:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;it feels pragmatic from the beginning&lt;/li&gt;
+&lt;li&gt;probably you don’t need any frameworks at all to use it&lt;/li&gt;
+&lt;li&gt;simpler = better, simplicity as a feature&lt;/li&gt;
+&lt;li&gt;quite easy to write REST application&lt;/li&gt;
+&lt;li&gt;the build in package manager ‘go get’ is cool thing&lt;/li&gt;
+&lt;li&gt;compilation &amp;amp; running time of go server is much faster than java&lt;/li&gt;
+&lt;li&gt;it doesn’t eat much of resources&lt;/li&gt;
+&lt;li&gt;you can use many text editors or IDEs for it (IntelliJ has Go Plugin)&lt;/li&gt;
+&lt;li&gt;gofmt – one and the only code formatter&lt;/li&gt;
+&lt;li&gt;designed for special needs, not for everything&lt;/li&gt;
+&lt;li&gt;it is easy to find examples by googling it, good enough community&lt;/li&gt;
+&lt;li&gt;return multiple values from Go functions – nice feature&lt;/li&gt;
+&lt;li&gt;syntax not beautiful like Python but still good&lt;/li&gt;
+&lt;li&gt;the build in ‘testing’ package – ok, but too simple (testify looks better)&lt;/li&gt;
+&lt;li&gt;concurrency – believe that it is nice, but didn’t tried it yet&lt;/li&gt;
+&lt;li&gt;it is much different than Scala – complexity vs simplicity&lt;/li&gt;
+&lt;li&gt;I think that I could be very productive with Go if i will get used to it&lt;/li&gt;
+&lt;li&gt;Docker, Kubernetes, CoreOs,  Consul, Flynn, Lime, Google, Dropbox…&lt;/li&gt;
+&lt;li&gt;heard that golang is good for ‘real time apps’ – want to try it soon&lt;/li&gt;
+&lt;li&gt;it seems to be good for building command-line tools&lt;/li&gt;
+&lt;li&gt;it is different than Java, little bit tricky at beginning, but easy to start ;)&lt;/li&gt;
+&lt;li&gt;‘good when you need to write something yourself instead of using library’&lt;/li&gt;
+&lt;li&gt;need to find idea for real project, because I kinda like Go&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Links:
+&lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;http://danmux.com/posts/what_golang_isnt/&#34;&gt;What Golang Is and Is Not&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://jimplush.com/talk/2015/12/19/moving-a-team-from-scala-to-golang/&#34;&gt;Moving a team from Scala to Golang&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://marcio.io/2015/07/handling-1-million-requests-per-minute-with-golang/&#34;&gt;Handling 1 Million Requests per Minute with Go&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://text.sourcegraph.com/google-i-o-talk-building-sourcegraph-a-large-scale-code-search-cross-reference-engine-in-go-1f911b78a82e#.jd729lgy5&#34;&gt;Sourcegraph, a large-scale code search &amp;amp; cross-reference engine in Go&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://medium.com/@tjholowaychuk/farewell-node-js-4ba9e7f3e52b#.o6e4uex72&#34;&gt;Farewell Node.js - Leaving node.js land for Go&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://hashrocket.com/blog/posts/websocket-shootout&#34;&gt;Websocket Shootout: Clojure, C++, Elixir, Go, NodeJS, and Ruby&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=JOx9enktnUM&#34;&gt;Go at Dropbox&lt;/a&gt; and &lt;a href=&#34;https://www.bigmarker.com/remote-meetup-go/Go-at-Dropbox&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/jpetazzo/docker-and-go-why-did-we-decide-to-write-docker-in-go&#34;&gt;Here&amp;rsquo;s Why Docker Was Written in Go&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/appleboy/write-microservice-in-golang&#34;&gt;Write microservice in golang&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://zduck.com/2014/go-and-package-versioning/&#34;&gt;Go and Package Versioning&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://allegro.tech/2016/03/writing-fast-cache-service-in-go.html&#34;&gt;allegro.tech - Writing a cache service with millions of entries in Go&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://eng.uber.com/go-geofence/&#34;&gt;Uber &amp;amp; Go&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://golang.org/doc/faq#What%5Fis%5Fthe%5Fpurpose%5Fof%5Fthe%5Fproject&#34;&gt;What is the purpose of Go project?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://github.com/golang/go/wiki/GoUsers&#34;&gt;GoUsers&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.itjobswatch.co.uk/jobs/uk/go.do&#34;&gt;Go UK Jobs Watch&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.indeed.com/jobtrends/q-golang.html&#34;&gt;indeed job trends&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.quora.com/What-is-the-future-of-the-Go-programming-language&#34;&gt;What is the future of the Go programming language?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.quora.com/Why-is-the-programming-language-GO-getting-so-popular-lately&#34;&gt;Why is the programming language GO getting so popular lately?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://blog.ralch.com/tutorial/golang-performance-and-memory-analysis/&#34;&gt;Performance and memory analysis of Golang programs&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.savethecode.com/racing-day-web-frameworks/&#34;&gt;Web Frameworks Benchmarks&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://opencredo.com/java-go-back/&#34;&gt;From Java to Go, and Back Again&lt;/a&gt; and &lt;a href=&#34;https://www.reddit.com/r/golang/comments/579wsk/from_java_to_go_and_back_again/?&#34;&gt;community reaction&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Univocity Parsers Library</title>

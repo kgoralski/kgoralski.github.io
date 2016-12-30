@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Go Language - First Impressions&middot; Krzysztof Góralski</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Krzysztof Góralski">
+	<meta name="description" content="Add a description of your website">
+	<meta name="keywords" content="java, jvm, golang">
+	<meta name="generator" content="Hugo 0.19-DEV" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://kgoralski.github.io/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="https://kgoralski.github.io/favicon.ico" type="image/x-icon">
+
+	<!-- RSS -->
+	
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+    <header class="site-header">
+	<div class="branding">
+		<a href="https://kgoralski.github.io/">
+		<img class="avatar" src="https://www.gravatar.com/avatar/7451b46a955132fa421fa5d59fde3e94?s=100&d=identicon" alt=""/>
+		</a>
+		<h1 class="site-title">
+			<a href="https://kgoralski.github.io/">Krzysztof Góralski</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+	      	
+
+	      	<li>
+	<a href="https://kgoralski.github.io/" title="">
+		<i class="fa fa-fw fa-home"></i>
+	</a>
+</li>
+
+<li>
+	<a href="https://kgoralski.github.io/index.xml" title="Subcribe">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+<li>
+	<a href="mailto:goralski.k@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="https://bitbucket.org/kgoralski" title="Bitbucket">
+		<i class="fa fa-fw fa-bitbucket"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/kgoralski" title="GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+<li>
+	<a href="https://www.linkedin.com/in/krzysztofgoralski" title="LinkedIn">
+		<i class="fa fa-fw fa-linkedin"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/k_goralski" title="Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+	    </ul>
+	</nav>
+</header>
+
+
+    <div class="content">
+    <article>
+		<header>
+			<h1 class="title">Go Language - First Impressions</h1>
+			<p class="meta">
+    September 4, 2016 &middot; 3 minute read
+
+    
+        &middot; Tags:
+            <a href="https://kgoralski.github.io/tags/go">Go</a>
+            
+</p>
+
+		</header>
+
+	<section class="post-content">
+		<p>Just wrote something small with Go Language. Simple CRUD/webservice with MySQL using gorilla mux and sqlx, but it is almost plain golang in dockerized environment. If anything wrong about it, tell me. If you know polish language you can check also this link: <a href="http://www.consdata.pl/blog/12-pirewsze-kroki-z-golang">http://www.consdata.pl/blog/12-pirewsze-kroki-z-golang</a> ;)</p>
+
+<p>Here are my impressions about it:</p>
+
+<ul>
+<li>it feels pragmatic from the beginning</li>
+<li>probably you don’t need any frameworks at all to use it</li>
+<li>simpler = better, simplicity as a feature</li>
+<li>quite easy to write REST application</li>
+<li>the build in package manager ‘go get’ is cool thing</li>
+<li>compilation &amp; running time of go server is much faster than java</li>
+<li>it doesn’t eat much of resources</li>
+<li>you can use many text editors or IDEs for it (IntelliJ has Go Plugin)</li>
+<li>gofmt – one and the only code formatter</li>
+<li>designed for special needs, not for everything</li>
+<li>it is easy to find examples by googling it, good enough community</li>
+<li>return multiple values from Go functions – nice feature</li>
+<li>syntax not beautiful like Python but still good</li>
+<li>the build in ‘testing’ package – ok, but too simple (testify looks better)</li>
+<li>concurrency – believe that it is nice, but didn’t tried it yet</li>
+<li>it is much different than Scala – complexity vs simplicity</li>
+<li>I think that I could be very productive with Go if i will get used to it</li>
+<li>Docker, Kubernetes, CoreOs,  Consul, Flynn, Lime, Google, Dropbox…</li>
+<li>heard that golang is good for ‘real time apps’ – want to try it soon</li>
+<li>it seems to be good for building command-line tools</li>
+<li>it is different than Java, little bit tricky at beginning, but easy to start ;)</li>
+<li>‘good when you need to write something yourself instead of using library’</li>
+<li>need to find idea for real project, because I kinda like Go</li>
+</ul>
+
+<p>Links:
+<ul>
+    <li><a href="http://danmux.com/posts/what_golang_isnt/">What Golang Is and Is Not</a></li>
+    <li><a href="http://jimplush.com/talk/2015/12/19/moving-a-team-from-scala-to-golang/">Moving a team from Scala to Golang</a></li>
+    <li><a href="http://marcio.io/2015/07/handling-1-million-requests-per-minute-with-golang/">Handling 1 Million Requests per Minute with Go</a></li>
+    <li><a href="https://text.sourcegraph.com/google-i-o-talk-building-sourcegraph-a-large-scale-code-search-cross-reference-engine-in-go-1f911b78a82e#.jd729lgy5">Sourcegraph, a large-scale code search &amp; cross-reference engine in Go</a></li>
+    <li><a href="https://medium.com/@tjholowaychuk/farewell-node-js-4ba9e7f3e52b#.o6e4uex72">Farewell Node.js - Leaving node.js land for Go</a></li>
+    <li><a href="https://hashrocket.com/blog/posts/websocket-shootout">Websocket Shootout: Clojure, C++, Elixir, Go, NodeJS, and Ruby</a></li>
+    <li><a href="https://www.youtube.com/watch?v=JOx9enktnUM">Go at Dropbox</a> and <a href="https://www.bigmarker.com/remote-meetup-go/Go-at-Dropbox">here</a></li>
+    <li><a href="http://www.slideshare.net/jpetazzo/docker-and-go-why-did-we-decide-to-write-docker-in-go">Here&rsquo;s Why Docker Was Written in Go</a></li>
+    <li><a href="http://www.slideshare.net/appleboy/write-microservice-in-golang">Write microservice in golang</a></li>
+    <li><a href="http://zduck.com/2014/go-and-package-versioning/">Go and Package Versioning</a></li>
+    <li><a href="http://allegro.tech/2016/03/writing-fast-cache-service-in-go.html">allegro.tech - Writing a cache service with millions of entries in Go</a></li>
+    <li><a href="https://eng.uber.com/go-geofence/">Uber &amp; Go</a></li>
+    <li><a href="https://golang.org/doc/faq#What%5Fis%5Fthe%5Fpurpose%5Fof%5Fthe%5Fproject">What is the purpose of Go project?</a></li>
+    <li><a href="https://github.com/golang/go/wiki/GoUsers">GoUsers</a></li>
+    <li><a href="http://www.itjobswatch.co.uk/jobs/uk/go.do">Go UK Jobs Watch</a></li>
+    <li><a href="http://www.indeed.com/jobtrends/q-golang.html">indeed job trends</a></li>
+    <li><a href="https://www.quora.com/What-is-the-future-of-the-Go-programming-language">What is the future of the Go programming language?</a></li>
+    <li><a href="https://www.quora.com/Why-is-the-programming-language-GO-getting-so-popular-lately">Why is the programming language GO getting so popular lately?</a></li>
+    <li><a href="http://blog.ralch.com/tutorial/golang-performance-and-memory-analysis/">Performance and memory analysis of Golang programs</a></li>
+    <li><a href="http://www.savethecode.com/racing-day-web-frameworks/">Web Frameworks Benchmarks</a></li>
+    <li><a href="https://opencredo.com/java-go-back/">From Java to Go, and Back Again</a> and <a href="https://www.reddit.com/r/golang/comments/579wsk/from_java_to_go_and_back_again/?">community reaction</a></li>
+</ul></p>
+
+	</section>
+
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'kgoralski';
+    var disqus_identifier = 'https:\/\/kgoralski.github.io\/post\/go-impressions\/';
+    var disqus_title = 'Go Language - First Impressions';
+    var disqus_url = 'https:\/\/kgoralski.github.io\/post\/go-impressions\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    <footer class="site-footer">
+	<p class="text">&copy; 2016 - <a href="https://kgoralski.github.io/">Krzysztof Góralski</a>. Released under the MIT license<br>Powered by <a href="//gohugo.io/">Hugo</a> with the <a href="//github.com/digitalcraftsman/hugo-type-theme">Type Theme</a></p>
+</footer>
+
+
+</body>
+</html>
