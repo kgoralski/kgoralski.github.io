@@ -6,9 +6,44 @@
     <description>Recent content on Krzysztof Góralski</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <copyright>Released under the MIT license&lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
-    <lastBuildDate>Sun, 28 Feb 2016 10:35:47 +0100</lastBuildDate>
+    <copyright>[Krzysztof Góralski](https://kgoralski.github.io/). Released under the MIT license&lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
+    <lastBuildDate>Sun, 31 Jul 2016 08:41:23 +0100</lastBuildDate>
     <atom:link href="https://kgoralski.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My programming books</title>
+      <link>https://kgoralski.github.io/post/books/</link>
+      <pubDate>Sun, 31 Jul 2016 08:41:23 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/books/</guid>
+      <description>&lt;p&gt;My current, unordered book list but I wasn’t able to read them all, yet.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Core Java, Volume I and II; Horstmann&lt;/li&gt;
+&lt;li&gt;Thinking in Java; Eckel&lt;/li&gt;
+&lt;li&gt;OCA/OCP Java SE 7 Programmer I &amp;amp; II Study Guide; Sierra &amp;amp; Bates&lt;/li&gt;
+&lt;li&gt;Effective Java; Bloch&lt;/li&gt;
+&lt;li&gt;Java Concurrency in Practice; Goetz&lt;/li&gt;
+&lt;li&gt;Spring Boot in Action; Walls&lt;/li&gt;
+&lt;li&gt;Java EE 7 Development with WildFly; Ćmil, Matłoka, Marchioni&lt;/li&gt;
+&lt;li&gt;The C Programming Language; Kernighan, Ritchie&lt;/li&gt;
+&lt;li&gt;The C++ Programming Language; Stroustrup&lt;/li&gt;
+&lt;li&gt;Effective Modern C++; Meyers&lt;/li&gt;
+&lt;li&gt;Learning Python: Powerful Object-Oriented Programming; Lutz&lt;/li&gt;
+&lt;li&gt;Scala for the Impatient; Horstmann&lt;/li&gt;
+&lt;li&gt;Functional Programming in Scala; Chiusano, Bjarnason&lt;/li&gt;
+&lt;li&gt;Seven Languages in Seven Weeks, Tate&lt;/li&gt;
+&lt;li&gt;Algorithms Unlocked, Cormen&lt;/li&gt;
+&lt;li&gt;Introduction to Algorithms, Cormen&lt;/li&gt;
+&lt;li&gt;Design Patterns; Gang of Four&lt;/li&gt;
+&lt;li&gt;Head First, Design Patterns; Sierra, Robson, Bates &amp;amp; Freeman&lt;/li&gt;
+&lt;li&gt;Clean Code; Martin&lt;/li&gt;
+&lt;li&gt;The Pragmatic Programmer; Hunt&lt;/li&gt;
+&lt;li&gt;The Software Craftsman: Professionalism, Pragmatism, Pride; Mancuso&lt;/li&gt;
+&lt;li&gt;The Go Programming Language, Donovan &amp;amp; Kernighan&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>RxJava Basics</title>
