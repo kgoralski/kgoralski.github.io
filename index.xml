@@ -216,13 +216,15 @@ Resources:
       <guid>https://kgoralski.github.io/post/wildfly-crud-docker/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m not that familiar with pure Java EE stack. My experience is mostly mixing Java EE with Spring. So, I just wanted to play with it. You can find it here:
 &lt;a href=&#34;https://github.com/kgoralski/wildfly-template&#34;&gt;&lt;a href=&#34;https://github.com/KrzysztofGoralski/wildfly-template&#34;&gt;https://github.com/KrzysztofGoralski/wildfly-template&lt;/a&gt;
-&lt;/a&gt;
-Java EE
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Java EE
 JAX-RS - RESTEasy
 Apache Deltaspike (similiar to Spring Data)
 H2 Database
 Docker
-Maven&lt;/p&gt;
+Maven
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;It is just an example and far from real application. It will be required to add tests for sure and it would be interesting to do it this way:
 &lt;a href=&#34;http://blog.arungupta.me/run-javaee-tests-wildfly-docker-arquillian-cube/&#34;&gt;Docker with Arquillian Cube&lt;/a&gt;&lt;/p&gt;
