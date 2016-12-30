@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spring Boot on Krzysztof Góralski</title>
+    <link>https://kgoralski.github.io/tags/spring-boot/index.xml</link>
+    <description>Recent content in Spring Boot on Krzysztof Góralski</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>[Krzysztof Góralski](https://kgoralski.github.io/). Released under the MIT license&lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
+    <atom:link href="https://kgoralski.github.io/tags/spring-boot/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hystrix &amp; Spring Boot Configuration</title>
+      <link>https://kgoralski.github.io/post/hystrix-springboot/</link>
+      <pubDate>Mon, 28 Mar 2016 08:41:23 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/hystrix-springboot/</guid>
+      <description>&lt;p&gt;Check this awesome &lt;a href=&#34;https://youtu.be/RpfQ8AHwEvg&#34;&gt;video&lt;/a&gt;. Below you can find how to configure Hystrix with Spring Boot 1.1.8 with Spring Cloud Hystrix Starter.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;compile &#39;org.springframework.cloud:spring-cloud-starter-hystrix:1.0.0.RELEASE&#39; for Spring Boot 1.1.8.
+@EnableCircuitBreaker on Main/Runner class
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Register Hystrix Servlet:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@Configuration
+public class HystrixServletDefinitions {
+
+       @Bean(name = &amp;quot;hystrixRegistrationBean&amp;quot;)
+       public ServletRegistrationBean servletRegistrationBean() {
+             ServletRegistrationBean registration = new ServletRegistrationBean(
+                           new HystrixMetricsStreamServlet(), &amp;quot;/metrics/hystrix.stream&amp;quot;);
+             registration.setName(&amp;quot;hystrixServlet&amp;quot;);
+             registration.setLoadOnStartup(1);
+             return registration;
+       }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add it to Spring Security if needed: .antMatchers(&amp;ldquo;/metrics/hystrix.stream&amp;rdquo;).permitAll()&lt;/li&gt;
+&lt;li&gt;Create config.properties file like this  + check docs&lt;/li&gt;
+&lt;li&gt;Create defaultMethod which will be used when CircuitBreaker will open:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public List&amp;lt;SampleObject&amp;gt; defaultMethod() {
+             return Lists.newArrayList();
+       }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Use annotation where you want to use it:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;@HystrixCommand(fallbackMethod = &amp;quot;defaultMethod&amp;quot;)
+       public List&amp;lt;SampleObject&amp;gt; getRealMethod() {
+             // implementation...
+       }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Want cool Dashboard? Get and deploy somewhere Hystrix-Dashboard.war and target our &amp;ldquo;/metrics/hystrix.stream&amp;rdquo;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

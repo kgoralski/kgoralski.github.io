@@ -28,9 +28,11 @@ Maven&lt;/p&gt;
 &lt;p&gt;It is just an example and far from real application. It will be required to add tests for sure and it would be interesting to do it this way:
 &lt;a href=&#34;http://blog.arungupta.me/run-javaee-tests-wildfly-docker-arquillian-cube/&#34;&gt;Docker with Arquillian Cube&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Install Docker first&amp;hellip; I&amp;rsquo;m using Intellij IDEA Ultimate, to add docker to this IDE:
-1. File-&amp;gt; Settings-&amp;gt; Builds, Executions, Deployment -&amp;gt; Clouds
-2. Add Docker with API URL = unix:///var/run/docker.sock&lt;/p&gt;
+&lt;p&gt;Install Docker first&amp;hellip; I&amp;rsquo;m using Intellij IDEA Ultimate, to add docker to this IDE:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1. File-&amp;gt; Settings-&amp;gt; Builds, Executions, Deployment -&amp;gt; Clouds
+2. Add Docker with API URL = unix:///var/run/docker.sock
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;My dockerfile is simple and using jboss/wildfly image.&lt;/p&gt;
 
@@ -41,12 +43,14 @@ CMD [&amp;quot;/opt/jboss/wildfly/bin/standalone.sh&amp;quot;, &amp;quot;-b&amp;
 EXPOSE 8080
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;To run it:
-1. Run -&amp;gt; Run&amp;hellip; -&amp;gt; Edit Configurations
+&lt;p&gt;To run it:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1. Run -&amp;gt; Run... -&amp;gt; Edit Configurations
 2. Add Docker deployment
 3. Add image tag and container name in Deployment Tab
 4. Generate new container_settings.json in Container tab
-5. Run it :)&lt;/p&gt;
+5. Run it :)
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

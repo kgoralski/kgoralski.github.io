@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<title>Wildfly CRUD example with Docker&middot; Krzysztof Góralski</title>
+	<title>Hystrix &amp; Spring Boot Configuration&middot; Krzysztof Góralski</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Krzysztof Góralski">
@@ -121,66 +121,72 @@
     <div class="content">
     <article>
 		<header>
-			<h1 class="title">Wildfly CRUD example with Docker</h1>
+			<h1 class="title">Hystrix &amp; Spring Boot Configuration</h1>
 			<p class="meta">
-    July 31, 2016 &middot; 1 minute read
+    March 28, 2016 &middot; 1 minute read
 
     
         &middot; Tags:
-            <a href="https://kgoralski.github.io/tags/docker">Docker</a>
+            <a href="https://kgoralski.github.io/tags/hystrix">Hystrix</a>
             , <a href="https://kgoralski.github.io/tags/java">Java</a>
-            , <a href="https://kgoralski.github.io/tags/wildfly">Wildfly</a>
+            , <a href="https://kgoralski.github.io/tags/spring-boot">Spring Boot</a>
             
 </p>
 
 		</header>
 
 	<section class="post-content">
-		<p>I&rsquo;m not that familiar with pure Java EE stack. My experience is mostly mixing Java EE with Spring. So, I just wanted to play with it. You can find it here:
-<a href="https://github.com/kgoralski/wildfly-template"><a href="https://github.com/KrzysztofGoralski/wildfly-template">https://github.com/KrzysztofGoralski/wildfly-template</a>
-</a>
-Java EE
-JAX-RS - RESTEasy
-Apache Deltaspike (similiar to Spring Data)
-H2 Database
-Docker
-Maven</p>
+		<p>Check this awesome <a href="https://youtu.be/RpfQ8AHwEvg">video</a>. Below you can find how to configure Hystrix with Spring Boot 1.1.8 with Spring Cloud Hystrix Starter.</p>
 
-<p>It is just an example and far from real application. It will be required to add tests for sure and it would be interesting to do it this way:
-<a href="http://blog.arungupta.me/run-javaee-tests-wildfly-docker-arquillian-cube/">Docker with Arquillian Cube</a></p>
-
-<p>Install Docker first&hellip; I&rsquo;m using Intellij IDEA Ultimate, to add docker to this IDE:</p>
-
-<pre><code>1. File-&gt; Settings-&gt; Builds, Executions, Deployment -&gt; Clouds
-2. Add Docker with API URL = unix:///var/run/docker.sock
+<pre><code>compile 'org.springframework.cloud:spring-cloud-starter-hystrix:1.0.0.RELEASE' for Spring Boot 1.1.8.
+@EnableCircuitBreaker on Main/Runner class
 </code></pre>
 
-<p>My dockerfile is simple and using jboss/wildfly image.</p>
+<p>Register Hystrix Servlet:</p>
 
-<pre><code class="language-java">FROM jboss/wildfly
-ADD target/wildfly-template.war /opt/jboss/wildfly/standalone/deployments/
-RUN /opt/jboss/wildfly/bin/add-user.sh admin Admin#70365 --silent
-CMD [&quot;/opt/jboss/wildfly/bin/standalone.sh&quot;, &quot;-b&quot;, &quot;0.0.0.0&quot;, &quot;-bmanagement&quot;, &quot;0.0.0.0&quot;]
-EXPOSE 8080
+<pre><code class="language-java">@Configuration
+public class HystrixServletDefinitions {
+
+       @Bean(name = &quot;hystrixRegistrationBean&quot;)
+       public ServletRegistrationBean servletRegistrationBean() {
+             ServletRegistrationBean registration = new ServletRegistrationBean(
+                           new HystrixMetricsStreamServlet(), &quot;/metrics/hystrix.stream&quot;);
+             registration.setName(&quot;hystrixServlet&quot;);
+             registration.setLoadOnStartup(1);
+             return registration;
+       }
+}
 </code></pre>
 
-<p>To run it:</p>
+<ul>
+<li>Add it to Spring Security if needed: .antMatchers(&ldquo;/metrics/hystrix.stream&rdquo;).permitAll()</li>
+<li>Create config.properties file like this  + check docs</li>
+<li>Create defaultMethod which will be used when CircuitBreaker will open:</li>
+</ul>
 
-<pre><code>1. Run -&gt; Run... -&gt; Edit Configurations
-2. Add Docker deployment
-3. Add image tag and container name in Deployment Tab
-4. Generate new container_settings.json in Container tab
-5. Run it :)
+<pre><code class="language-java">public List&lt;SampleObject&gt; defaultMethod() {
+             return Lists.newArrayList();
+       }
 </code></pre>
+
+<p>Use annotation where you want to use it:</p>
+
+<pre><code class="language-java">@HystrixCommand(fallbackMethod = &quot;defaultMethod&quot;)
+       public List&lt;SampleObject&gt; getRealMethod() {
+             // implementation...
+       }
+</code></pre>
+
+<p>Want cool Dashboard? Get and deploy somewhere Hystrix-Dashboard.war and target our &ldquo;/metrics/hystrix.stream&rdquo;</p>
 
 	</section>
 
 	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'kgoralski';
-    var disqus_identifier = 'https:\/\/kgoralski.github.io\/post\/wildfly-crud-docker\/';
-    var disqus_title = 'Wildfly CRUD example with Docker';
-    var disqus_url = 'https:\/\/kgoralski.github.io\/post\/wildfly-crud-docker\/';
+    var disqus_identifier = 'https:\/\/kgoralski.github.io\/post\/hystrix-springboot\/';
+    var disqus_title = 'Hystrix \x26 Spring Boot Configuration';
+    var disqus_url = 'https:\/\/kgoralski.github.io\/post\/hystrix-springboot\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
