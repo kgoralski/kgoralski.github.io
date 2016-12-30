@@ -577,6 +577,52 @@ public class Main {
     </item>
     
     <item>
+      <title>Scala Learning Resources</title>
+      <link>https://kgoralski.github.io/post/scala-sources/</link>
+      <pubDate>Tue, 29 Sep 2015 08:41:23 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/scala-sources/</guid>
+      <description>&lt;p&gt;So&amp;hellip; I know a little bit of Groovy language, but only a little ;) Mostly used with Gradle or with Spock Framework. But, I decided to learn Scala&amp;hellip;first (instead of Groovy) language to learn new paradigm - functional programming. Didn&amp;rsquo;t tried Scala yet, but I gathered some nice learning resources, so I can share it :)&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;&lt;a href=&#34;http://docs.scala-lang.org/tutorials/?_ga=1.129674892.126527232.1440869235&#34;&gt;Official Scala Docs&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://docs.scala-lang.org/tutorials/scala-for-java-programmers.html&#34;&gt;Scala Tutorial for Java Programmers&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://eed3si9n.com/learning-scalaz/&#34;&gt;Learning Scalaz&lt;/a&gt; - Scalaz by eed3si9n.com&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://github.com/scalaz/scalaz&#34;&gt;Examples, Tests, Code&lt;/a&gt; - Scalaz&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://github.com/milessabin/shapeless&#34;&gt;Generic programming for Scala&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.coursera.org/course/progfun&#34;&gt;Functional Programming Principles in Scala&lt;/a&gt; - www.coursera.org by by Martin Odersky&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://scalatutorials.com/&#34;&gt;http://scalatutorials.com&lt;/a&gt; - with online interpreter available&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.scala-tour.com/&#34;&gt;http://www.scala-tour.com/&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://scala-exercises.47deg.com/&#34;&gt;Scala Exercises&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://scalaforfunandprofit.com/why-use-fsharp/&#34;&gt;Why use Scala?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://twitter.github.io/scala_school/&#34;&gt;Scala School&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.codecommit.com/blog/scala/roundup-scala-for-java-refugees&#34;&gt;Scala for Java Refugees&lt;/a&gt; - Daniel Spiewak&#39;s blog&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://github.com/lauris/awesome-scala&#34;&gt;Awesome Scala&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.reddit.com/r/scala/&#34;&gt;Reddit - Scala&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://lihaoyi.github.io/post/StrategicScalaStylePrincipleofLeastPower.html&#34;&gt;Strategic Scala Style&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://github.com/databricks/scala-style-guide#naming&#34;&gt;Scala Style Guide&lt;/a&gt; by rxin&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://docs.scala-lang.org/style/&#34;&gt;Scala Style Guide&lt;/a&gt; by official docs&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://github.com/lauris/awesome-scala&#34;&gt;Awesome Scala&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Books:
+&lt;ol&gt;
+    &lt;li&gt;Functional Programming in Scala - Paul Chiusano &amp; Rúnar Bjarnason&lt;/li&gt;
+    &lt;li&gt;Programming in Scala - Martin Odersky&lt;/li&gt;
+    &lt;li&gt;Scala for the Impatient - Cay S. Horstmann&lt;/li&gt;
+    &lt;li&gt;Scala in Depth - Joshua D. Suereth&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.scala-lang.org/download/&#34;&gt;Download Scala Here&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;IDE:
+&lt;ol&gt;
+    &lt;li&gt;&lt;a href=&#34;http://scala-ide.org/&#34;&gt;Scala IDE&lt;/a&gt; - Eclipse based&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://plugins.jetbrains.com/plugin/?id=1347&#34;&gt;Scala Plugin for IntelliJ IDEA&lt;/a&gt; - check it &lt;a href=&#34;http://blog.jetbrains.com/scala/&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Job change</title>
       <link>https://kgoralski.github.io/post/books/</link>
       <pubDate>Mon, 31 Aug 2015 08:41:23 +0100</pubDate>
