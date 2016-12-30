@@ -131,10 +131,10 @@
     
     <item>
       <title>My programming books</title>
-      <link>https://kgoralski.github.io/post/books/</link>
+      <link>https://kgoralski.github.io/post/job-change/</link>
       <pubDate>Sun, 31 Jul 2016 08:41:23 +0100</pubDate>
       
-      <guid>https://kgoralski.github.io/post/books/</guid>
+      <guid>https://kgoralski.github.io/post/job-change/</guid>
       <description>&lt;p&gt;My current, unordered book list but I wasn’t able to read them all, yet.&lt;/p&gt;
 
 &lt;ol&gt;
@@ -406,6 +406,116 @@ public class Main {
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Job change</title>
+      <link>https://kgoralski.github.io/post/books/</link>
+      <pubDate>Mon, 31 Aug 2015 08:41:23 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/books/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&lt;strong&gt;Updated. Poniżej również tekst &#34;po roku pracy&#34;.&lt;/strong&gt;&lt;/p&gt;
+Old stuff. Poniższy tekst został napisany w styczniu 2015 (a pracuję od maja 2015), w momencie kiedy miałem silne postanowienie zmiany pracy by zostać programistą. Zacząłem się uczyć na początku 2014 r. Z perspektywy czasu, powiem: Warto. Nie ma drogi na skróty. Chcieć to móc. Motywacja jest bardzo ważna, a może najważniejsza. Zacznij się uczyć. A piszę to dlatego, bo zauważyłem, że jest spore zainteresowanie tematem. Przede wszystkim, odpowiedz sobie na to bardzo ważne &lt;a href=&#34;https://www.youtube.com/watch?v=Ybq2iTT25bY&#34;&gt;pytanie&lt;/a&gt;.
+&lt;p style=&#34;text-align:justify;&#34;&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:justify;&#34;&gt;&#34;Postanowiłem się podzielić w jaki sposób ja zamierzam się przebranżowić, być może ułatwi to sprawę pytającym. Może ktoś skorzysta.&lt;/p&gt;
+&lt;p style=&#34;text-align:justify;&#34;&gt;Słowem wstępu. Mam 29 lat. Pracuję w innej branży. W ostatnim roku zacząłem szukać informacji jak się przebranżowić, wiele czytałem, gromadziłem informacje. Zacząłem też się uczyć i próbować wielu rzeczy, robić proste projekty, próbując wymyślić co mi bardziej będzie pasować a co nie. Nie mam komfortowej sytuacji, że mogę rzucić wszystko i zacząć coś innego ale staram się, żeby była jak najbardziej komfortowa. Przyszło też załamanie, z powodów osobistych a także nieco sytuacji finansowej (w zasadzie źle nie zarabiam, tylko miałem spore wydatki i po prostu zastanawiałem się czy podołam). Mimo to nie zrezygnowałem z pomysłu. Muszę spróbować bo nie da mi to spokoju. W zasadzie to w pomyśle nikt mnie nie popiera. Na przekór wszystkim mnie do tego ciągnie i nic na to nie poradzę. Mimo to wiele rzeczy z IT mnie interesuje, nie tylko programowanie. Niestety nie posiadam znajomych, którzy się tym trudnią. Z początku myślałem o tym czysto hobbystycznie, ale wkręcam się coraz bardziej. Nie, nie boję się, że jestem za stary.&lt;/p&gt;
+&lt;strong&gt;Moje działania&lt;/strong&gt; zanim stworzyłem konkretny plan (niekoniecznie po kolei):
+&lt;ol&gt;
+    &lt;li&gt;Szukanie i gromadzenie informacji - książki, kursy, tutoriale, ciekawe wpisy ludzie z doświadczeniem, wykłady, listy projektów itp.&lt;/li&gt;
+    &lt;li&gt;Wykorzystanie wszystkich możliwości jakie mam w obecnej pracy by przekuć to na zalety (np. mogłem iść chociaż na szkolenie z SQL)&lt;/li&gt;
+    &lt;li&gt;Przygotowanie sobie środowiska pracy, IDE, komputer, zahaczając o linuxa itp. - może złej baletnicy przeszkadza rąbek od spódnicy - ale ja się uczę po godzinach, w wolnych chwilach - na razie, więc wyeliminowanie wszystkich możliwych denerwujących aspektów działa na plus.&lt;/li&gt;
+    &lt;li&gt;Zdecydowanie się na technologię i zastanowienie się co chciałbym robić - było trochę Pythona, ostatecznie Java - co dokładnie chciałbym robić w sumie to jeszcze nie wiem, póki co nie tracę zainteresowania, a im więcej rzeczy poznaje to ta droga może się zmieniać. (nie wykluczam poznania innych języków, ale na razie zostaję przy Java)&lt;/li&gt;
+    &lt;li&gt;Oczywiście nauka w wolnych chwilach: weekendy, w tygodniu po godz. 17:00 - wygospodarować sobie czas, zrobić plan dnia&lt;/li&gt;
+    &lt;li&gt;Liczne rozważania, wzloty, upadki, tracenie motywacji itp. Wniosek: potrzebowałem kopa w dupę.&lt;/li&gt;
+    &lt;li&gt;Pewnie większość uzna, że to śmieszne, sam tak uważałem, ale stwierdziłem, że &#34;co mi szkodzi?&#34;. -&gt; Tym kopem był doradca zawodowy z agencji rekruterskiej, która głównie rekrutuje stanowiska IT. Potrzebowałem usłyszeć &#34;dasz radę&#34;, &#34;jakie możliwości, plany A i B&#34;, &#34;jak efektywnie podejść do zmiany zawodu&#34;, &#34;jak pracodawca będzie na mnie patrzył&#34;, &#34;co zmienić w CV&#34;. - Tutaj widać jak motywacja jest ważna. Nie miałem wiary w siebie i starczyło, żeby ktokolwiek powiedział mi &#34;dasz radę&#34; i jakoś to poszło.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p style=&#34;text-align:justify;&#34;&gt;No to mam swój &lt;strong&gt;Plan A&lt;/strong&gt; (został nakreślony w styczniu 2015) - co zrobić by zacząć pracę jako programista Java:&lt;/p&gt;
+
+&lt;p&gt;&lt;ol&gt;
+    &lt;li style=&#34;text-align:justify;&#34;&gt;Wrócić do systematycznej nauki i praktycznego kodowania -&amp;gt; własne projekty &amp;amp; zacząć coś open source (bo miałem przerwę) - to obejmuje również wymyślanie własnych, coraz bardziej sensownych projektów&lt;/li&gt;
+    &lt;li style=&#34;text-align:justify;&#34;&gt;Zapisać się do lokalnych organizacji, chodzić na konferencje oraz targi pracy -&amp;gt; trochę zaznajomić się ze środowiskiem&lt;/li&gt;
+    &lt;li style=&#34;text-align:justify;&#34;&gt;Opracować dokumenty aplikacyjne oraz konta społecznościowe jak linkedin i goldenline w kierunku stanowiska programisty i pozostać tam aktywnym&lt;/li&gt;
+    &lt;li style=&#34;text-align:justify;&#34;&gt;Stworzyć listę interesujących firm z mojej lokalizacji&lt;/li&gt;
+    &lt;li style=&#34;text-align:justify;&#34;&gt;Mailing -&amp;gt; stworzyć interesującą, nie za długą wiadomość e-mail opisującą trochę moją sytuację oraz chęć nauki i pracy i zacząć rozsyłać do firm&lt;/li&gt;
+    &lt;li style=&#34;text-align:justify;&#34;&gt;Dalej przeglądać oferty pracy i staży. Może szukać firm, które realizują projekty dla firm z mojej obecnej branży&lt;/li&gt;
+    &lt;li style=&#34;text-align:justify;&#34;&gt;Szukać stażu/praktyk itp., pierwszych doświadczeń, które można wpisać do CV, jeśli się zdarzy rzucić obecną pracę i poświęcić duże ilości czasu na pracę oraz naukę po godzinach pracy&lt;/li&gt;
+    &lt;li style=&#34;text-align:justify;&#34;&gt;Iść na studia podyplomowe + certyfikat OCA/OCP Java - to był punkt, którego pewien nie byłem, rozważałem też zaoczną Infę albo nic nie robić. Przejrzałem ofertę tych studiów podyplomowych, podoba mi się tematyka (bardziej ogólny kierunek niż sama Java), prowadzący to chyba głównie praktycy, więc na plus. I jedna z zalet takich studiów, poznanie środowiska i może właściwych ludzi, którzy pomogą pchać to dalej. Certyfikat zobaczę jak obrócą się sprawy - przynajmniej jest tani. Aha mam zaoszczędzoną kasę i to też jest argument by zrobić te studia. I to bardziej &amp;ldquo;dla siebie&amp;rdquo; niż dla papiera.&lt;/li&gt;
+    &lt;li style=&#34;text-align:justify;&#34;&gt;W jakiś wolnych chwilach np. czekając gdzieś mieć ze sobą jakąś książkę np. &amp;ldquo;clean code&amp;rdquo; i coś sobie czytać&lt;/li&gt;
+    &lt;li style=&#34;text-align:justify;&#34;&gt;Być może stworzyć bloga o programowaniu lub własną stronę jako swoje CV czy cokolwiek w ten deseń&lt;/li&gt;
+    &lt;li style=&#34;text-align:justify;&#34;&gt;Dostać się na stanowisko Junior Java Developer&lt;/li&gt;
+    &lt;li style=&#34;text-align:justify;&#34;&gt;Na bazie doświadczenia opracować ścieżkę dalszego rozwoju: Android, Web itp. itd. Wiele z tych punktów robić jednocześnie. Generalnie to zrobić jak najwięcej w krótkim czasie, by nieco nadrobić stracony czas.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p style=&#34;text-align:justify;&#34;&gt;Oczywiście to jest coś co ja będę się starał realizować. Wierzę, że dla innych może zadziałać coś innego.&amp;rdquo;&lt;/p&gt;
+&lt;p style=&#34;text-align:justify;&#34;&gt;Ps. Nie wszystkie z tych punktów zostąły spełnione np. na studia i na certyfikat ostatecznie nie poszedłem :)&lt;/p&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;strong&gt;UPDATE. Po roku pracy:&lt;/strong&gt;&lt;/p&gt;
+Jest dobrze, mocno do przodu, mój obecny stack to mniej więcej coś takiego:
+Spring Framework (Spring DI, Spring Boot, Spring Data, Spring Security, Spring MVC)
+Elementy JEE
+Hibernate, JPA, Jersey, Rest, Guava
+TDD, JUnit, Mockito, Spock
+Eclipse/IntelliJ, Git, Gradle, Groovy, Jenkins
+DB: MySQL, Oracle
++ trochę Scala i akka-http
+
+&lt;hr /&gt;
+&lt;p style=&#34;text-align:justify;&#34;&gt;Kiedyś napisałem dla kogoś tekst odnośnie &#34;motywacji ludzi, którzy chcą się przebranżowić&#34;. Może to komuś pomoże.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;p style=&#34;text-align:justify;&#34;&gt;Ogólnie jakbym miał kiedyś o tym robić prezentację to zaczynałbym od tego:&lt;/p&gt;
+&lt;p style=&#34;text-align:justify;&#34;&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=9O-ZI0Kzttg&#34;&gt;https://www.youtube.com/watch?v=9O-ZI0Kzttg&lt;/a&gt; Scena z Laską z filmu Chłopaki nie Płaczą.&lt;/p&gt;
+Chciałem napisać krótko a i tak wyszło dużo. Będzie Wall of text, a mógłbym napisać więcej.
+Poniżej pytania jakie otrzymywałem, myślę, że to naświetli problem.Zresztą po tych pytaniach raczej widać, że kłopoty w przebranżowieniu nie leżą w samej nauce programowania, tylko gdzie indziej.
+&lt;p style=&#34;text-align:justify;&#34;&gt;&lt;span style=&#34;text-decoration:underline;&#34;&gt;Czemu ludzie chcą zostać programistami?&lt;/span&gt;
+Głównie dlatego, że chcą robić coś ciekawego. Generalnie większość takich osób jest w podobnym wieku co ja 29-30 lat. Ci młodsi by się przebranżowić wielkich kłopotów raczej nie mają. Mam wrażenie, że jak dawno temu byliśmy głupi i młodzi to wydawało nam się, że na jakiekolwiek studia nie pójdziemy to będzie dobrze. Rzeczywistość to weryfikuje. Wydaje mnie się, że często to są ludzie ambitni, którzy się duszą bo nie mogą się w żaden sposób realizować zawodowo.&lt;/p&gt;
+W innej branży bardzo szybko można popaść w rutynę i łatwo osiągnąć szklany sufit możliwości, realizacji siebie czy zarobków. Wtedy jak się pomyśli, że będzie się tak pracować X lat, to się rzygać chce. &amp;ldquo;znowu do tej roboty&amp;rdquo;. IT to jest cały czas coś nowego, wiele ścieżek rozwoju, nawet jeśli pracodawca nas blokuje to można się uczyć czegoś nowego. Mi osobiście średnio pasowała realizacja siebie w sferze bardziej biznesowej.&lt;/p&gt;
+
+&lt;p&gt;Część ludzi chyba chce dlatego, że słyszała, że programiści dużo zarabiają. Według mnie jest to skazane na porażkę. Myślę, że są łatwiejsze sposoby na zarabianie a programowanie trzeba chociaż trochę lubić.&lt;/p&gt;
+
+&lt;p&gt;Część ludzi też chce być &amp;ldquo;kimś&amp;rdquo; i robić coś &amp;lsquo;konkretnego&amp;rdquo;.
+&lt;p style=&#34;text-align:justify;&#34;&gt;&lt;span style=&#34;text-decoration:underline;&#34;&gt;Ogólnie wyszczególniłbym kilka najważniejszych problemów przy realizacji celu:&lt;/span&gt;
+1) Motywacja - numer jeden. Motywacja, chęci, determinacja są najważniejsze.
+a) Głównym problemem tutaj jest to, że ludzie zamiast widzieć cel widzą same problemy, przez co nie skupiają się na programowaniu, na pisaniu linii kodu, tylko na np. A czy pisać pod Windowsem czy linuksem? Czy w Eclipse czy w Netbeans? Czy klawiatura taka i taka starczy czy może powinienem mieć większy monitor? Jaki język wybrać? itp. - Człowiek piętrzy problemy, które są tak naprawdę nieistotne.
+2) Wiara w siebie - W sumie można by połączyć to z powyższym. Osobiście nie miałem za bardzo wsparcia w realizacji celu, nie mogłem sobie też pozwolić na to, żebym nie miał źródeł dochodu, więc musiałem jednocześnie pracować i się uczyć. Brak czasu wolnego. Ogólnie to samo nic nie przyjdzie, trzeba wykonać kawał ciężkiej roboty. W moim przypadku 1 osoba powedziała mi : You can do it i to wystarczyło.
+3) Czas - bez czasu poświęconego na naukę nic z tego nie będzie. Warto nakreślić sobie plan działania, albo nawet plan A i plan B (sam myślałem alternatywnie by zacząć od testera czy jakiegoś wdrożeniowca, gdzie będzie potrzebna wiedza biznesowa), starać się realizować punkty planu, żeby mieć jakiś progress. U mnie w zasadzie działało to na zasadzie &amp;ldquo;uczę się kiedy tylko mogę&amp;rdquo;. Łączy się z tym kwestia &amp;ldquo;sytuacji życiowej&amp;rdquo;. Wiek też robi swoje, im jesteśmy starsi tym więcej obowiązków.&lt;/p&gt;
+&lt;p style=&#34;text-align:justify;&#34;&gt;Wydaje mnie się, że wiele osób szuka w necie potwierdzenia, że się da, przypadki ludzi, którym się udało ich motywują. Sam też najpierw takiego potwierdzenia szukałem.&lt;/p&gt;
+&lt;span style=&#34;text-decoration:underline;&#34;&gt;Przeszkody jakie ludzie widzą:&lt;/span&gt;
+Ludzie boją się, że nie podołają, że jest za późno, że są za starzy, że ich sytuacja życiowa na to nie pozwoli, że są za głupi, bo programowanie to czarna magia, że nie mają czasu, że za wiele trudu trzeba wykonać na początek, bo sufit się zwali na głowę. itp. Większość to wymówki. Czemu tak pisze, bo sam nie miałem komfortowej sytuacji tylko musiałem zwyczajnie zaryzykować i postawić wszystko na jedną kartę. Co łatwe nie było.
+&lt;p style=&#34;text-align:justify;&#34;&gt;Pytania jakie mi zadawano (dużo pytań tego typu dostałem):
+&lt;span style=&#34;text-decoration:underline;&#34;&gt;Pytania: &amp;ldquo;Jak się uczyć?&amp;rdquo;:&lt;/span&gt;
+-Długo się uczysz już javy? - Uczyłem się rok od Pythona przez Javę, po godzinach z przerwami, później dostałem pracę.
+-Jak rozkladales czas po pracy na nauke? Ile godzin dziennie? - Ile mogłem to sięuczyłem
+-Jak wygladalo twoje podejscie do nauki? Jak sie uczyles? Przepisywales kod z ksiazki i pozoniej modyfikowales i pisales sam czy jak? - Wszyskie sposoby, obecnie książek mam wiele. Newslettery do mnie spływają na bieżąco, szukam nowych wyzwań cały czas
+-Mam pytanie odnośnie tego ile czasu może zająć nauka programowania aby podjąć pierwszą pracę albo chociaż staż? - U każdego będzie różnie, według mnie najważniejsze by się udało, lepiej prędzej niż później
+-Czego &amp;ldquo;warto&amp;rdquo; się uczyć? (to pytanie zawsze się wszędzie pojawia i ludziom trudno zrozumieć, że jest ono źle stawiane) . - Nigdy nie kierowałem się tym, że da się na tym zarobić. Chciałem robić co lubię, a wtedy kasa powinna sama przyjść.&lt;/p&gt;
+&lt;span style=&#34;text-decoration:underline;&#34;&gt;Pytania o CV i rozmowę:&lt;/span&gt;
+-Jak wyglądała rozmowa? - miałem zadanie do zrobienia, skonsumowanie webservices i operować nimi lokalnie. Później pogadanka techniczna. Na pewno było coś z SQL
+-Jakieś testy, zadania? - jw
+-Miałeś jakiś projekt do pokazania w CV? - Nie miałem, robiłem jakieś banały ale ich nie wpisałem w CV
+-W jakiej branży pracowałeś przed przebranżowieniem? - Logistyka, z wykształcenia ogólnie mgr inż ale 0 programowania na studiach
+-Skoro wywaliłeś poprzednie doświadczenie z CV, to co w nim zostało? I co napisałeś o poprzednim doświadczeniu? - 1 linijkę, że gdzieś pracowałem te X lat
+-Czy wpisywałeś czego się uczyłeś z programowania mimo, że nie miałeś w tym doświadczenia komercyjnego? - wpisałem skill matrix w skali od 1 do 5
+-Sam się trochę uczę&amp;hellip; czy już czas na złożenie CV? - jak nie spróbuje to się nie dowie, a jak spróbuje i się nie uda to i tak mu da to dużo wiedzy
+-A co z wymogiem wykształcenia informatycznego? - Nie wydaje się to ani trochę istotne
+-Jak sobie radziłeś ze swoim wiekiem? Czy nie jesteśmy skreślani na starcie? - Chyba jednak nie. Ale postanowiłem ukryć datę urodzenia w CV :)
+-Ile wysłałeś CV? - Miałem 1 rozmowę na testera, 2 na programistę. Na 3 się udało.
+-Czy próbowałeś np w mailu napisać krótki LM? - miałem w swoim CV zakładkę &amp;ldquo;Cel&amp;rdquo; w którym opisałem co chcę osiągnąć
+-Czy podczas swojej aplikacji wpisywałeś w CV swoje projekty i potem opowiadałeś o nich na rozmowie? - Niet
+-Pisałeś, że uważasz, że niewiele umiesz. Jak to w takim razie zrobiłeś, że Twoje CV wyglądało dobrze?- Poradziłem się doradcy zawodowego rekrutującego na rynku IT
+-Czy wysyłałeś CV do firm stricte pracujących w Javie/Spring/Hibernete etc, etc? - Szukałem pracy w Java
+-Czy warto iść na studia informatyczne? - Na pewno coś dają, obecnie raczej nie czuję kompleksów wobec ludzi co skończyli studia
+-Jak u Ciebie ze znajomością angielskiego? - ponoć jest na tyle ok, że klient chwalił ze mną komunikację
+Ludzie często nie wiedzą jaki projekt zrobić dla nauki, to jest całkiem fajny zbiór dla początkujących:
+&lt;a href=&#34;http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/&#34;&gt;http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;text-decoration:underline;&#34;&gt;Pytania o początek kariery:&lt;/span&gt;
+-Płaca blisko średniej krajowej? - Mniej na początku, ale szybko się odbiłem, moje miasto to też nie Wawa, Krak czy Wroc, gdzie są lepsze stawki
+-Jak wyglądała praca na początku?- od razu na szeroką wode, rób taski, ucz się TDD itp.
+-A ile czasu obecnie poświęcasz na douczanie poza pracą? - mysle, że łącznie 1h dziennie
+-Jak można pracować z rzeczami których się nie zna? frameworki. itp. ? - taka natura tego zawodu&lt;/p&gt;</description>
     </item>
     
   </channel>
