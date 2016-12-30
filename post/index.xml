@@ -7,8 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>[Krzysztof Góralski](https://kgoralski.github.io/). Released under the MIT license&lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
-    <lastBuildDate>Sun, 04 Sep 2016 10:35:47 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 17 Oct 2016 08:41:23 +0100</lastBuildDate>
     <atom:link href="https://kgoralski.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ratpack Framework</title>
+      <link>https://kgoralski.github.io/post/ratpack/</link>
+      <pubDate>Mon, 17 Oct 2016 08:41:23 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/ratpack/</guid>
+      <description>&lt;p&gt;So, I heard that Java is not only about Spring or Java EE  :) There are also: Ratpack, &lt;a href=&#34;https://github.com/orefalo/lagom-sample-bank&#34;&gt;Lagom&lt;/a&gt;, &lt;a href=&#34;https://github.com/prajwalan/sparkjava-restapi-crud&#34;&gt;SparkJava&lt;/a&gt;, Akka&amp;hellip;Below, you will find great informations about Ratpack :) Check &lt;a href=&#34;http://salerno-rafael.blogspot.com/2016/08/ratpack-event-driven-framework-base-on.html&#34;&gt;this&lt;/a&gt; first.&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;Ratpack’s goals from &lt;a href=&#34;https://ratpack.io/manual/current/intro.html#goals&#34;&gt;docs &lt;/a&gt; are:
+&lt;ol&gt;
+    &lt;li&gt;To be fast, scalable, and efficient (Ratpack server  is up in 1 second)&lt;/li&gt;
+    &lt;li&gt;To allow applications to evolve in complexity without compromise&lt;/li&gt;
+    &lt;li&gt;To leverage the benefits of non-blocking programming and reduce the costs&lt;/li&gt;
+    &lt;li&gt;To be flexible and unopinionated when it comes to integrating other tools and libraries&lt;/li&gt;
+    &lt;li&gt;To allow applications to be easily and thoroughly tested&lt;/li&gt;
+&lt;/ol&gt;
+Ratpacks’s goals are &lt;strong&gt;not&lt;/strong&gt;:
+&lt;ol&gt;
+    &lt;li&gt;To be a fully integrated, “full stack” solution&lt;/li&gt;
+    &lt;li&gt;Provide every feature you might need in a neat box&lt;/li&gt;
+    &lt;li&gt;To provide an architecture or framework for “business logic”&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div&gt;When to use Ratpack?&lt;/div&gt;
+&lt;ul&gt;
+    &lt;li&gt;Micro-services&lt;/li&gt;
+    &lt;li&gt;High-througthput apps&lt;/li&gt;
+    &lt;li&gt;Lightweight apps&lt;/li&gt;
+    &lt;li&gt;Cloud Deployments&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+Resources:
+&lt;ol&gt;
+    &lt;li&gt;&lt;a href=&#34;https://danhyun.github.io/2016-jeeconf-rapid-ratpack-java/&#34;&gt;Rapid Java Web Application Development with Ratpack&lt;/a&gt; + &lt;a href=&#34;https://github.com/danhyun/2016-jeeconf-rapid-ratpack-java&#34;&gt;github&lt;/a&gt; + &lt;a href=&#34;https://www.youtube.com/watch?v=2p3IO39BK1k&#34;&gt;video&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=gSL0OSCQcsY&#34;&gt;Devoxx Poland 2016 - Laurent Doguin - A practical RxJava example with Ratpack&lt;/a&gt; +&lt;a href=&#34;https://github.com/ldoguin/ratpack-couchbase-repository-sample&#34;&gt;github&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://blog.couchbase.com/2016/april/crud-rest-api-couchbase-rxjava-ratpack&#34;&gt;A CRUD REST API with Couchbase, RxJava and Ratpack&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://github.com/danhyun/modern-java-web&#34;&gt;Modern Java Web&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://ratpack.io/manual/current/spring.html&#34;&gt;Ratpack &amp;amp; Spring Boot&lt;/a&gt; and &lt;a href=&#34;https://www.infoq.com/articles/Ratpack-and-Spring-Boot&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.slideshare.net/mobile/SpringCentral/high-performance-microservices-with-ratpack-and-spring-boot-64889596&#34;&gt;Sping &amp;amp; Ratpack Slideshare&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Great post &lt;a href=&#34;http://salerno-rafael.blogspot.com/2016/08/ratpack-event-driven-framework-base-on.html&#34;&gt;About Ratpack&lt;/a&gt; by Rafael Salerno&lt;/li&gt;
+    &lt;li&gt;Testing [&lt;a href=&#34;https://github.com/danhyun/2016-greach-testing-ratpack-applications&#34;&gt;1&lt;/a&gt;], [&lt;a href=&#34;http://alvarosanchez.github.io/ratpack-101/#_testing_ratpack_applications_with_spock_20_minutes&#34;&gt;2&lt;/a&gt;],[&lt;a href=&#34;https://danhyun.github.io/2016-gr8confus-testing-ratpack-apps/&#34;&gt;3&lt;/a&gt;]&lt;/li&gt;
+    &lt;li&gt;Often &lt;a href=&#34;http://www.jooq.org/why-jOOQ.pdf&#34;&gt;jOOQ &lt;/a&gt;is used with Ratpack, instead of Hibernate.&lt;/li&gt;
+&lt;/ol&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Go Language - First Impressions</title>
