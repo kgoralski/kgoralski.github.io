@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<title>Java&middot; Krzysztof Góralski</title>
+	<title>Spring &amp; Guava Cache&middot; Krzysztof Góralski</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Krzysztof Góralski">
@@ -16,8 +16,7 @@
 	<link rel="shortcut icon" href="https://kgoralski.github.io/favicon.ico" type="image/x-icon">
 
 	<!-- RSS -->
-	<link href="https://kgoralski.github.io/tags/java/index.xml" rel="alternate" type="application/rss+xml" title="Krzysztof Góralski" />
-	  	<link href="https://kgoralski.github.io/tags/java/index.xml" rel="feed" type="application/rss+xml" title="Krzysztof Góralski" />
+	
 
 	<!-- Font Awesome -->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
@@ -120,43 +119,10 @@
 
 
     <div class="content">
-    <div class="posts">
-	
-	<div class="post-teaser">
+    <article>
 		<header>
-		    <h1>
-		    <a class="post-link" href="https://kgoralski.github.io/post/univocity-parsers/">
-		        Univocity Parsers Library
-		    </a>
-		    </h1>
-		    <p class="meta">
-    August 25, 2016 &middot; 1 minute read
-
-    
-        &middot; Tags:
-            <a href="https://kgoralski.github.io/tags/java">Java</a>
-            , <a href="https://kgoralski.github.io/tags/csv">csv</a>
-            
-</p>
-
-		</header>
-
-		<div class="excerpt">
-			Very good parsing library
-			
-			<br>
-			<a class="button" href="https://kgoralski.github.io/post/univocity-parsers/">
-				Continue reading
-			</a>
-		</div>
-	</div><div class="post-teaser">
-		<header>
-		    <h1>
-		    <a class="post-link" href="https://kgoralski.github.io/post/spring-guava-cache/">
-		        Spring &amp; Guava Cache
-		    </a>
-		    </h1>
-		    <p class="meta">
+			<h1 class="title">Spring &amp; Guava Cache</h1>
+			<p class="meta">
     March 9, 2016 &middot; 1 minute read
 
     
@@ -169,48 +135,79 @@
 
 		</header>
 
-		<div class="excerpt">
-			Configuration of Guava Cache with Spring
-			
-			<br>
-			<a class="button" href="https://kgoralski.github.io/post/spring-guava-cache/">
-				Continue reading
-			</a>
-		</div>
-	</div><div class="post-teaser">
-		<header>
-		    <h1>
-		    <a class="post-link" href="https://kgoralski.github.io/post/rxjava-basics/">
-		        RxJava Basics
-		    </a>
-		    </h1>
-		    <p class="meta">
-    February 28, 2016 &middot; 4 minute read
+	<section class="post-content">
+		<p>Check the excellent guide <a href="http://codedevstuff.blogspot.com/2015/07/add-guava-cache-to-spring-boot-to-cache.html">here</a> about Cache in Spring. Below you can find similar code. Also check the official <a href="https://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html">docs</a>.</p>
 
-    
-        &middot; Tags:
-            <a href="https://kgoralski.github.io/tags/java">Java</a>
-            , <a href="https://kgoralski.github.io/tags/rxjava">RxJava</a>
-            
-</p>
+<pre><code class="language-java">// compile ('org.springframework:spring-context-support:4.0.7.RELEASE')
+@Configuration
+@EnableCaching
+public class CacheConfig implements CachingConfigurer {
+ 
+    public final static String CACHE = &quot;cache&quot;;
+ 
+    private static final Logger LOGGER = LoggerFactory.getLogger(CacheConfig.class);
+ 
+    @Bean
+    @Override
+    public CacheManager cacheManager() {
+        LOGGER.info(&quot;Initializing simple Guava Cache manager.&quot;);
+        SimpleCacheManager cacheManager = new SimpleCacheManager();
+        GuavaCache discoveryCache = new GuavaCache(CACHE,
+                CacheBuilder.newBuilder().expireAfterWrite(60, TimeUnit.MINUTES).build());
+        cacheManager.setCaches(Arrays.asList(discoveryCache));
+        return cacheManager;
+    }
+ 
+    @Bean
+    @Override
+    public KeyGenerator keyGenerator() {
+        return new SimpleKeyGenerator();
+    }
+ 
+}
+// mark method with @Cacheable annotation
+@Component
+public class CacheService {
+ 
+    @Inject
+    private BooksService bookService;
+ 
+    @Cacheable(CacheConfig.CACHE)
+    public List&lt;Book&gt; getBooks() {
+        return bookService.getBooks();
+    }
+}
+ 
+// You can clear cache like this
+@Controller
+@RequestMapping(&quot;/&quot;)
+public class ClearCacheController {
+ 
+    @CacheEvict(value = CacheConfig.CACHE, allEntries = true)
+    @RequestMapping(value = &quot;/clearCache&quot;, method = RequestMethod.GET)
+    public ResponseEntity&lt;String&gt; clearCache() {
+        return new ResponseEntity&lt;String&gt;(&quot;Cache Cleared&quot;, HttpStatus.OK);
+    }
+}
+</code></pre>
 
-		</header>
+	</section>
 
-		<div class="excerpt">
-			Quick introduction into RxJava
-			
-			<br>
-			<a class="button" href="https://kgoralski.github.io/post/rxjava-basics/">
-				Continue reading
-			</a>
-		</div>
-	</div>
-</div>
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'kgoralski';
+    var disqus_identifier = 'https:\/\/kgoralski.github.io\/post\/spring-guava-cache\/';
+    var disqus_title = 'Spring \x26 Guava Cache';
+    var disqus_url = 'https:\/\/kgoralski.github.io\/post\/spring-guava-cache\/';
 
-	<div class="pagination">
-	
-</div>
-
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
 
     <footer class="site-footer">

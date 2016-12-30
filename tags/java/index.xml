@@ -66,6 +66,69 @@
     </item>
     
     <item>
+      <title>Spring &amp; Guava Cache</title>
+      <link>https://kgoralski.github.io/post/spring-guava-cache/</link>
+      <pubDate>Wed, 09 Mar 2016 10:35:47 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/spring-guava-cache/</guid>
+      <description>&lt;p&gt;Check the excellent guide &lt;a href=&#34;http://codedevstuff.blogspot.com/2015/07/add-guava-cache-to-spring-boot-to-cache.html&#34;&gt;here&lt;/a&gt; about Cache in Spring. Below you can find similar code. Also check the official &lt;a href=&#34;https://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html&#34;&gt;docs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;// compile (&#39;org.springframework:spring-context-support:4.0.7.RELEASE&#39;)
+@Configuration
+@EnableCaching
+public class CacheConfig implements CachingConfigurer {
+ 
+    public final static String CACHE = &amp;quot;cache&amp;quot;;
+ 
+    private static final Logger LOGGER = LoggerFactory.getLogger(CacheConfig.class);
+ 
+    @Bean
+    @Override
+    public CacheManager cacheManager() {
+        LOGGER.info(&amp;quot;Initializing simple Guava Cache manager.&amp;quot;);
+        SimpleCacheManager cacheManager = new SimpleCacheManager();
+        GuavaCache discoveryCache = new GuavaCache(CACHE,
+                CacheBuilder.newBuilder().expireAfterWrite(60, TimeUnit.MINUTES).build());
+        cacheManager.setCaches(Arrays.asList(discoveryCache));
+        return cacheManager;
+    }
+ 
+    @Bean
+    @Override
+    public KeyGenerator keyGenerator() {
+        return new SimpleKeyGenerator();
+    }
+ 
+}
+// mark method with @Cacheable annotation
+@Component
+public class CacheService {
+ 
+    @Inject
+    private BooksService bookService;
+ 
+    @Cacheable(CacheConfig.CACHE)
+    public List&amp;lt;Book&amp;gt; getBooks() {
+        return bookService.getBooks();
+    }
+}
+ 
+// You can clear cache like this
+@Controller
+@RequestMapping(&amp;quot;/&amp;quot;)
+public class ClearCacheController {
+ 
+    @CacheEvict(value = CacheConfig.CACHE, allEntries = true)
+    @RequestMapping(value = &amp;quot;/clearCache&amp;quot;, method = RequestMethod.GET)
+    public ResponseEntity&amp;lt;String&amp;gt; clearCache() {
+        return new ResponseEntity&amp;lt;String&amp;gt;(&amp;quot;Cache Cleared&amp;quot;, HttpStatus.OK);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>RxJava Basics</title>
       <link>https://kgoralski.github.io/post/rxjava-basics/</link>
       <pubDate>Sun, 28 Feb 2016 10:35:47 +0100</pubDate>
