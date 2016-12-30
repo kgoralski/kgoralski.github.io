@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<title>Posts&middot; Krzysztof Góralski</title>
+	<title>akka-http-slick-guice example&middot; Krzysztof Góralski</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Krzysztof Góralski">
@@ -16,8 +16,7 @@
 	<link rel="shortcut icon" href="https://kgoralski.github.io/favicon.ico" type="image/x-icon">
 
 	<!-- RSS -->
-	<link href="https://kgoralski.github.io/post/index.xml" rel="alternate" type="application/rss+xml" title="Krzysztof Góralski" />
-	  	<link href="https://kgoralski.github.io/post/index.xml" rel="feed" type="application/rss+xml" title="Krzysztof Góralski" />
+	
 
 	<!-- Font Awesome -->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
@@ -120,76 +119,61 @@
 
 
     <div class="content">
-    <div class="posts">
-	
-	<div class="post-teaser">
+    <article>
 		<header>
-		    <h1>
-		    <a class="post-link" href="https://kgoralski.github.io/post/rxjava-basics/">
-		        RxJava Basics
-		    </a>
-		    </h1>
-		    <p class="meta">
-    February 28, 2016 &middot; 4 minute read
+			<h1 class="title">akka-http-slick-guice example</h1>
+			<p class="meta">
+    May 3, 2016 &middot; 1 minute read
 
     
         &middot; Tags:
-            <a href="https://kgoralski.github.io/tags/java">Java</a>
-            , <a href="https://kgoralski.github.io/tags/rxjava">RxJava</a>
+            <a href="https://kgoralski.github.io/tags/guice">Guice</a>
+            , <a href="https://kgoralski.github.io/tags/scala">Scala</a>
+            , <a href="https://kgoralski.github.io/tags/slick">Slick</a>
+            , <a href="https://kgoralski.github.io/tags/akka-http">akka-http</a>
             
 </p>
 
 		</header>
 
-		<div class="excerpt">
-			Quick introduction into RxJava
-			
-			<br>
-			<a class="button" href="https://kgoralski.github.io/post/rxjava-basics/">
-				Continue reading
-			</a>
-		</div>
-	</div><div class="post-teaser">
-		<header>
-		    <h1>
-		    <a class="post-link" href="https://kgoralski.github.io/post/books/">
-		        Job change
-		    </a>
-		    </h1>
-		    <p class="meta">
-    August 31, 2015 &middot; 10 minute read
+	<section class="post-content">
+		<p>Forked from <a href="https://github.com/knoldus/akka-http-slick">https://github.com/knoldus/akka-http-slick</a></p>
 
-    
-        &middot; Tags:
-            <a href="https://kgoralski.github.io/tags/career">career</a>
-            , <a href="https://kgoralski.github.io/tags/polish">polish</a>
-            
-</p>
+<p>Changes:
+<ul>
+    <li>Guice added</li>
+    <li>Changed Routes to Get, Put, Post, Delete</li>
+    <li>Changed urls</li>
+    <li>Changed Json Parser from Lift to akka-http/Spray one</li>
+    <li>Some fixes</li>
+</ul>
+Check example here:</p>
 
-		</header>
+<p><a href="https://www.lightbend.com/activator/template/akka-http-slick-guice">https://www.lightbend.com/activator/template/akka-http-slick-guice</a>
+<a href="https://github.com/kgoralski/akka-http-slick-guice">https://github.com/kgoralski/akka-http-slick-guice</a>
+<ul>
+    <li>akka-http : REST</li>
+    <li>slick : database access &amp; relational mapping</li>
+    <li>guice: dependency injection</li>
+</ul></p>
 
-		<div class="excerpt">
-			<p style="text-align:justify;"><strong>Updated. Poniżej również tekst "po roku pracy".</strong></p>
-Old stuff. Poniższy tekst został napisany w styczniu 2015 (a pracuję od maja 2015), w momencie kiedy miałem silne postanowienie zmiany pracy by zostać programistą. Zacząłem się uczyć na początku 2014 r. Z perspektywy czasu, powiem: Warto. Nie ma drogi na skróty. Chcieć to móc. Motywacja jest bardzo ważna, a może najważniejsza. Zacznij się uczyć. A piszę to dlatego, bo zauważyłem, że jest spore zainteresowanie tematem. Przede wszystkim, odpowiedz sobie na to bardzo ważne <a href="https://www.youtube.com/watch?v=Ybq2iTT25bY">pytanie</a>.
-<p style="text-align:justify;">
-			
-			<br>
-			<a class="button" href="https://kgoralski.github.io/post/books/">
-				Continue reading
-			</a>
-		</div>
-	</div>
-</div>
+	</section>
 
-	<div class="pagination">
-	<a href="/post/" class="button" >
-			<i class="fa fa-chevron-left"></i>
-			Prev
-		</a>
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'kgoralski';
+    var disqus_identifier = 'https:\/\/kgoralski.github.io\/post\/akka-http-slick-guice\/';
+    var disqus_title = 'akka-http-slick-guice example';
+    var disqus_url = 'https:\/\/kgoralski.github.io\/post\/akka-http-slick-guice\/';
 
-		
-</div>
-
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
 
     <footer class="site-footer">

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guice on Krzysztof Góralski</title>
+    <link>https://kgoralski.github.io/tags/guice/index.xml</link>
+    <description>Recent content in Guice on Krzysztof Góralski</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>[Krzysztof Góralski](https://kgoralski.github.io/). Released under the MIT license&lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
+    <atom:link href="https://kgoralski.github.io/tags/guice/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>akka-http-slick-guice example</title>
+      <link>https://kgoralski.github.io/post/akka-http-slick-guice/</link>
+      <pubDate>Tue, 03 May 2016 08:41:23 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/akka-http-slick-guice/</guid>
+      <description>&lt;p&gt;Forked from &lt;a href=&#34;https://github.com/knoldus/akka-http-slick&#34;&gt;https://github.com/knoldus/akka-http-slick&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes:
+&lt;ul&gt;
+    &lt;li&gt;Guice added&lt;/li&gt;
+    &lt;li&gt;Changed Routes to Get, Put, Post, Delete&lt;/li&gt;
+    &lt;li&gt;Changed urls&lt;/li&gt;
+    &lt;li&gt;Changed Json Parser from Lift to akka-http/Spray one&lt;/li&gt;
+    &lt;li&gt;Some fixes&lt;/li&gt;
+&lt;/ul&gt;
+Check example here:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.lightbend.com/activator/template/akka-http-slick-guice&#34;&gt;https://www.lightbend.com/activator/template/akka-http-slick-guice&lt;/a&gt;
+&lt;a href=&#34;https://github.com/kgoralski/akka-http-slick-guice&#34;&gt;https://github.com/kgoralski/akka-http-slick-guice&lt;/a&gt;
+&lt;ul&gt;
+    &lt;li&gt;akka-http : REST&lt;/li&gt;
+    &lt;li&gt;slick : database access &amp;amp; relational mapping&lt;/li&gt;
+    &lt;li&gt;guice: dependency injection&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -165,6 +165,34 @@
     </item>
     
     <item>
+      <title>akka-http-slick-guice example</title>
+      <link>https://kgoralski.github.io/post/akka-http-slick-guice/</link>
+      <pubDate>Tue, 03 May 2016 08:41:23 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/akka-http-slick-guice/</guid>
+      <description>&lt;p&gt;Forked from &lt;a href=&#34;https://github.com/knoldus/akka-http-slick&#34;&gt;https://github.com/knoldus/akka-http-slick&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Changes:
+&lt;ul&gt;
+    &lt;li&gt;Guice added&lt;/li&gt;
+    &lt;li&gt;Changed Routes to Get, Put, Post, Delete&lt;/li&gt;
+    &lt;li&gt;Changed urls&lt;/li&gt;
+    &lt;li&gt;Changed Json Parser from Lift to akka-http/Spray one&lt;/li&gt;
+    &lt;li&gt;Some fixes&lt;/li&gt;
+&lt;/ul&gt;
+Check example here:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.lightbend.com/activator/template/akka-http-slick-guice&#34;&gt;https://www.lightbend.com/activator/template/akka-http-slick-guice&lt;/a&gt;
+&lt;a href=&#34;https://github.com/kgoralski/akka-http-slick-guice&#34;&gt;https://github.com/kgoralski/akka-http-slick-guice&lt;/a&gt;
+&lt;ul&gt;
+    &lt;li&gt;akka-http : REST&lt;/li&gt;
+    &lt;li&gt;slick : database access &amp;amp; relational mapping&lt;/li&gt;
+    &lt;li&gt;guice: dependency injection&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Spring &amp; Guava Cache</title>
       <link>https://kgoralski.github.io/post/spring-guava-cache/</link>
       <pubDate>Wed, 09 Mar 2016 10:35:47 +0100</pubDate>
