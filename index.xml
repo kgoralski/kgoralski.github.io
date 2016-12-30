@@ -7,8 +7,50 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>[Krzysztof Góralski](https://kgoralski.github.io/). Released under the MIT license&lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
-    <lastBuildDate>Mon, 17 Oct 2016 08:41:23 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 30 Dec 2016 21:12:10 +0100</lastBuildDate>
     <atom:link href="https://kgoralski.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Kotlin &#43; Spring Boot = Kotlinboot</title>
+      <link>https://kgoralski.github.io/post/kotlinboot/</link>
+      <pubDate>Fri, 30 Dec 2016 21:12:10 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/kotlinboot/</guid>
+      <description>&lt;p&gt;Another day, another CRUD ;) . Inspired by one of JUGs decided to write another example of application.
+This time it is Kotlin and Spring Boot. But it is a quick one. After checking some languages this year I think that I will spend my free time with Golang in 2017 ;)&lt;/p&gt;
+
+&lt;p&gt;Example is here: &lt;a href=&#34;https://github.com/kgoralski/kotlin-springboot-template&#34;&gt;https://github.com/kgoralski/kotlin-springboot-template&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Kotlin
+Spring Boot
+REST JAX-RS and Jersey Proxy Client
+HATEOAS Example
+Sprind Data JPA with H2 Database
+Spring Data NoSQL with Apache Cassandra (from Docker for App, embedded for Tests)
+Spring Data REST
+Tests with Spock
+Gradle Kotlin Script with multi modules
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Impressions? Not much, didn&amp;rsquo;t really feel that I&amp;rsquo;m learning new language:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Feels easy to adopt, but still it is a new language. So it needs learning too ;)&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;Better Java&amp;rsquo;? Probably we can use Kotlin like that&lt;/li&gt;
+&lt;li&gt;Less boilerplate&lt;/li&gt;
+&lt;li&gt;Null safety&lt;/li&gt;
+&lt;li&gt;Immutability&lt;/li&gt;
+&lt;li&gt;Data Class! Better than Lombok :)&lt;/li&gt;
+&lt;li&gt;Gotta watchout on empty constructors while using Java Frameworks (Jackson etc.)&lt;/li&gt;
+&lt;li&gt;Intellij IDEA can convert Java to Kotlin&lt;/li&gt;
+&lt;li&gt;Constructor Injection Preference&lt;/li&gt;
+&lt;li&gt;Less annotations?&lt;/li&gt;
+&lt;li&gt;Gradle Kotlin Script - love IDEA code completion&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I guess that after some learning time developers will be able to be more productive with Kotlin.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Ratpack</title>

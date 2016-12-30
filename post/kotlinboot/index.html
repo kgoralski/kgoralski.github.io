@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<title>Spring Boot&middot; Krzysztof Góralski</title>
+	<title>Kotlin &#43; Spring Boot = Kotlinboot&middot; Krzysztof Góralski</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Krzysztof Góralski">
@@ -16,8 +16,7 @@
 	<link rel="shortcut icon" href="https://kgoralski.github.io/favicon.ico" type="image/x-icon">
 
 	<!-- RSS -->
-	<link href="https://kgoralski.github.io/tags/spring-boot/index.xml" rel="alternate" type="application/rss+xml" title="Krzysztof Góralski" />
-	  	<link href="https://kgoralski.github.io/tags/spring-boot/index.xml" rel="feed" type="application/rss+xml" title="Krzysztof Góralski" />
+	
 
 	<!-- Font Awesome -->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
@@ -120,16 +119,10 @@
 
 
     <div class="content">
-    <div class="posts">
-	
-	<div class="post-teaser">
+    <article>
 		<header>
-		    <h1>
-		    <a class="post-link" href="https://kgoralski.github.io/post/kotlinboot/">
-		        Kotlin &#43; Spring Boot = Kotlinboot
-		    </a>
-		    </h1>
-		    <p class="meta">
+			<h1 class="title">Kotlin &#43; Spring Boot = Kotlinboot</h1>
+			<p class="meta">
     December 30, 2016 &middot; 1 minute read
 
     
@@ -141,49 +134,58 @@
 
 		</header>
 
-		<div class="excerpt">
-			Another day, another CRUD ;) . Inspired by one of JUG meetings decided to write another example of application. This time it is Kotlin and Spring Boot. But it is a quick one.
-			
-			<br>
-			<a class="button" href="https://kgoralski.github.io/post/kotlinboot/">
-				Continue reading
-			</a>
-		</div>
-	</div><div class="post-teaser">
-		<header>
-		    <h1>
-		    <a class="post-link" href="https://kgoralski.github.io/post/hystrix-springboot/">
-		        Hystrix &amp; Spring Boot Configuration
-		    </a>
-		    </h1>
-		    <p class="meta">
-    March 28, 2016 &middot; 1 minute read
+	<section class="post-content">
+		<p>Another day, another CRUD ;) . Inspired by one of JUGs decided to write another example of application.
+This time it is Kotlin and Spring Boot. But it is a quick one. After checking some languages this year I think that I will spend my free time with Golang in 2017 ;)</p>
 
-    
-        &middot; Tags:
-            <a href="https://kgoralski.github.io/tags/hystrix">Hystrix</a>
-            , <a href="https://kgoralski.github.io/tags/java">Java</a>
-            , <a href="https://kgoralski.github.io/tags/spring-boot">Spring Boot</a>
-            
-</p>
+<p>Example is here: <a href="https://github.com/kgoralski/kotlin-springboot-template">https://github.com/kgoralski/kotlin-springboot-template</a></p>
 
-		</header>
+<pre><code>Kotlin
+Spring Boot
+REST JAX-RS and Jersey Proxy Client
+HATEOAS Example
+Sprind Data JPA with H2 Database
+Spring Data NoSQL with Apache Cassandra (from Docker for App, embedded for Tests)
+Spring Data REST
+Tests with Spock
+Gradle Kotlin Script with multi modules
+</code></pre>
 
-		<div class="excerpt">
-			Quick setup for Hystrix and Spring
-			
-			<br>
-			<a class="button" href="https://kgoralski.github.io/post/hystrix-springboot/">
-				Continue reading
-			</a>
-		</div>
-	</div>
-</div>
+<p>Impressions? Not much, didn&rsquo;t really feel that I&rsquo;m learning new language:</p>
 
-	<div class="pagination">
-	
-</div>
+<ul>
+<li>Feels easy to adopt, but still it is a new language. So it needs learning too ;)</li>
+<li>&lsquo;Better Java&rsquo;? Probably we can use Kotlin like that</li>
+<li>Less boilerplate</li>
+<li>Null safety</li>
+<li>Immutability</li>
+<li>Data Class! Better than Lombok :)</li>
+<li>Gotta watchout on empty constructors while using Java Frameworks (Jackson etc.)</li>
+<li>Intellij IDEA can convert Java to Kotlin</li>
+<li>Constructor Injection Preference</li>
+<li>Less annotations?</li>
+<li>Gradle Kotlin Script - love IDEA code completion</li>
+</ul>
 
+<p>I guess that after some learning time developers will be able to be more productive with Kotlin.</p>
+
+	</section>
+
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'kgoralski';
+    var disqus_identifier = 'https:\/\/kgoralski.github.io\/post\/kotlinboot\/';
+    var disqus_title = 'Kotlin \x2b Spring Boot = Kotlinboot';
+    var disqus_url = 'https:\/\/kgoralski.github.io\/post\/kotlinboot\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
 
     <footer class="site-footer">
