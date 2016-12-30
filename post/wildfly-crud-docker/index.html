@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<title>Java&middot; Krzysztof Góralski</title>
+	<title>Wildfly CRUD example with Docker&middot; Krzysztof Góralski</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Krzysztof Góralski">
@@ -16,8 +16,7 @@
 	<link rel="shortcut icon" href="https://kgoralski.github.io/favicon.ico" type="image/x-icon">
 
 	<!-- RSS -->
-	<link href="https://kgoralski.github.io/tags/java/index.xml" rel="alternate" type="application/rss+xml" title="Krzysztof Góralski" />
-	  	<link href="https://kgoralski.github.io/tags/java/index.xml" rel="feed" type="application/rss+xml" title="Krzysztof Góralski" />
+	
 
 	<!-- Font Awesome -->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
@@ -120,43 +119,10 @@
 
 
     <div class="content">
-    <div class="posts">
-	
-	<div class="post-teaser">
+    <article>
 		<header>
-		    <h1>
-		    <a class="post-link" href="https://kgoralski.github.io/post/univocity-parsers/">
-		        Univocity Parsers Library
-		    </a>
-		    </h1>
-		    <p class="meta">
-    August 25, 2016 &middot; 1 minute read
-
-    
-        &middot; Tags:
-            <a href="https://kgoralski.github.io/tags/java">Java</a>
-            , <a href="https://kgoralski.github.io/tags/csv">csv</a>
-            
-</p>
-
-		</header>
-
-		<div class="excerpt">
-			Very good parsing library
-			
-			<br>
-			<a class="button" href="https://kgoralski.github.io/post/univocity-parsers/">
-				Continue reading
-			</a>
-		</div>
-	</div><div class="post-teaser">
-		<header>
-		    <h1>
-		    <a class="post-link" href="https://kgoralski.github.io/post/wildfly-crud-docker/">
-		        Wildfly CRUD example with Docker
-		    </a>
-		    </h1>
-		    <p class="meta">
+			<h1 class="title">Wildfly CRUD example with Docker</h1>
+			<p class="meta">
     July 31, 2016 &middot; 1 minute read
 
     
@@ -169,76 +135,57 @@
 
 		</header>
 
-		<div class="excerpt">
-			I&rsquo;m not that familiar with pure Java EE stack. My experience is mostly mixing Java EE with Spring. So, I decided to play with it
-			
-			<br>
-			<a class="button" href="https://kgoralski.github.io/post/wildfly-crud-docker/">
-				Continue reading
-			</a>
-		</div>
-	</div><div class="post-teaser">
-		<header>
-		    <h1>
-		    <a class="post-link" href="https://kgoralski.github.io/post/spring-guava-cache/">
-		        Spring &amp; Guava Cache
-		    </a>
-		    </h1>
-		    <p class="meta">
-    March 9, 2016 &middot; 1 minute read
+	<section class="post-content">
+		<p>I&rsquo;m not that familiar with pure Java EE stack. My experience is mostly mixing Java EE with Spring. So, I just wanted to play with it. You can find it here:
+<a href="https://github.com/kgoralski/wildfly-template"><a href="https://github.com/KrzysztofGoralski/wildfly-template">https://github.com/KrzysztofGoralski/wildfly-template</a>
+</a>
+Java EE
+JAX-RS - RESTEasy
+Apache Deltaspike (similiar to Spring Data)
+H2 Database
+Docker
+Maven</p>
 
-    
-        &middot; Tags:
-            <a href="https://kgoralski.github.io/tags/guava-cache">Guava Cache</a>
-            , <a href="https://kgoralski.github.io/tags/java">Java</a>
-            , <a href="https://kgoralski.github.io/tags/spring">Spring</a>
-            
-</p>
+<p>It is just an example and far from real application. It will be required to add tests for sure and it would be interesting to do it this way:
+<a href="http://blog.arungupta.me/run-javaee-tests-wildfly-docker-arquillian-cube/">Docker with Arquillian Cube</a></p>
 
-		</header>
+<p>Install Docker first&hellip; I&rsquo;m using Intellij IDEA Ultimate, to add docker to this IDE:
+1. File-&gt; Settings-&gt; Builds, Executions, Deployment -&gt; Clouds
+2. Add Docker with API URL = unix:///var/run/docker.sock</p>
 
-		<div class="excerpt">
-			Configuration of Guava Cache with Spring
-			
-			<br>
-			<a class="button" href="https://kgoralski.github.io/post/spring-guava-cache/">
-				Continue reading
-			</a>
-		</div>
-	</div><div class="post-teaser">
-		<header>
-		    <h1>
-		    <a class="post-link" href="https://kgoralski.github.io/post/rxjava-basics/">
-		        RxJava Basics
-		    </a>
-		    </h1>
-		    <p class="meta">
-    February 28, 2016 &middot; 4 minute read
+<p>My dockerfile is simple and using jboss/wildfly image.</p>
 
-    
-        &middot; Tags:
-            <a href="https://kgoralski.github.io/tags/java">Java</a>
-            , <a href="https://kgoralski.github.io/tags/rxjava">RxJava</a>
-            
-</p>
+<pre><code class="language-java">FROM jboss/wildfly
+ADD target/wildfly-template.war /opt/jboss/wildfly/standalone/deployments/
+RUN /opt/jboss/wildfly/bin/add-user.sh admin Admin#70365 --silent
+CMD [&quot;/opt/jboss/wildfly/bin/standalone.sh&quot;, &quot;-b&quot;, &quot;0.0.0.0&quot;, &quot;-bmanagement&quot;, &quot;0.0.0.0&quot;]
+EXPOSE 8080
+</code></pre>
 
-		</header>
+<p>To run it:
+1. Run -&gt; Run&hellip; -&gt; Edit Configurations
+2. Add Docker deployment
+3. Add image tag and container name in Deployment Tab
+4. Generate new container_settings.json in Container tab
+5. Run it :)</p>
 
-		<div class="excerpt">
-			Quick introduction into RxJava
-			
-			<br>
-			<a class="button" href="https://kgoralski.github.io/post/rxjava-basics/">
-				Continue reading
-			</a>
-		</div>
-	</div>
-</div>
+	</section>
 
-	<div class="pagination">
-	
-</div>
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'kgoralski';
+    var disqus_identifier = 'https:\/\/kgoralski.github.io\/post\/wildfly-crud-docker\/';
+    var disqus_title = 'Wildfly CRUD example with Docker';
+    var disqus_url = 'https:\/\/kgoralski.github.io\/post\/wildfly-crud-docker\/';
 
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
 
     <footer class="site-footer">

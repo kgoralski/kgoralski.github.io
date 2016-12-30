@@ -66,6 +66,47 @@
     </item>
     
     <item>
+      <title>Wildfly CRUD example with Docker</title>
+      <link>https://kgoralski.github.io/post/wildfly-crud-docker/</link>
+      <pubDate>Sun, 31 Jul 2016 08:41:23 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/wildfly-crud-docker/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m not that familiar with pure Java EE stack. My experience is mostly mixing Java EE with Spring. So, I just wanted to play with it. You can find it here:
+&lt;a href=&#34;https://github.com/kgoralski/wildfly-template&#34;&gt;&lt;a href=&#34;https://github.com/KrzysztofGoralski/wildfly-template&#34;&gt;https://github.com/KrzysztofGoralski/wildfly-template&lt;/a&gt;
+&lt;/a&gt;
+Java EE
+JAX-RS - RESTEasy
+Apache Deltaspike (similiar to Spring Data)
+H2 Database
+Docker
+Maven&lt;/p&gt;
+
+&lt;p&gt;It is just an example and far from real application. It will be required to add tests for sure and it would be interesting to do it this way:
+&lt;a href=&#34;http://blog.arungupta.me/run-javaee-tests-wildfly-docker-arquillian-cube/&#34;&gt;Docker with Arquillian Cube&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Install Docker first&amp;hellip; I&amp;rsquo;m using Intellij IDEA Ultimate, to add docker to this IDE:
+1. File-&amp;gt; Settings-&amp;gt; Builds, Executions, Deployment -&amp;gt; Clouds
+2. Add Docker with API URL = unix:///var/run/docker.sock&lt;/p&gt;
+
+&lt;p&gt;My dockerfile is simple and using jboss/wildfly image.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;FROM jboss/wildfly
+ADD target/wildfly-template.war /opt/jboss/wildfly/standalone/deployments/
+RUN /opt/jboss/wildfly/bin/add-user.sh admin Admin#70365 --silent
+CMD [&amp;quot;/opt/jboss/wildfly/bin/standalone.sh&amp;quot;, &amp;quot;-b&amp;quot;, &amp;quot;0.0.0.0&amp;quot;, &amp;quot;-bmanagement&amp;quot;, &amp;quot;0.0.0.0&amp;quot;]
+EXPOSE 8080
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To run it:
+1. Run -&amp;gt; Run&amp;hellip; -&amp;gt; Edit Configurations
+2. Add Docker deployment
+3. Add image tag and container name in Deployment Tab
+4. Generate new container_settings.json in Container tab
+5. Run it :)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Spring &amp; Guava Cache</title>
       <link>https://kgoralski.github.io/post/spring-guava-cache/</link>
       <pubDate>Wed, 09 Mar 2016 10:35:47 +0100</pubDate>
