@@ -377,6 +377,62 @@ public class HystrixServletDefinitions {
     </item>
     
     <item>
+      <title>RxJava Async Rest Calls</title>
+      <link>https://kgoralski.github.io/post/rxjava-async/</link>
+      <pubDate>Sat, 26 Mar 2016 10:35:47 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/rxjava-async/</guid>
+      <description>&lt;p&gt;I’m not really sure if the code snippet below is 100% correct… Schedulers.io() is not probably the way to go ;)
+I wanted to try RxJava for two Async Rest Calls with blocking at the end.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;package org.rx.java.tutorial;
+ 
+import java.util.List;
+ 
+ 
+import rx.Observable;
+import rx.functions.Func2;
+import rx.schedulers.Schedulers;
+ 
+public class App {
+ 
+    public static void main(String[] args) {
+        List&amp;lt;Person&amp;gt; zipped = Observable
+                .zip(getObservableName(), getObservableAge(), new Func2&amp;lt;String, Integer, Person&amp;gt;() {
+ 
+                    @Override
+                    public Person call(String name, Integer age) {
+                        Person person = new Person();
+                        person.setName(name);
+                        person.setAge(age);
+                        return person;
+                    }
+                }).toList().toBlocking().single();
+ 
+        zipped.stream().forEach(person -&amp;gt; {
+            System.out.println(&amp;quot;[Name : &amp;quot; + person.getName() + &amp;quot;, Age : &amp;quot; + person.getAge() + &amp;quot;]&amp;quot;);
+            // [Name : Maciek, Age : 18]
+            // [Name : Rysiek, Age : 20]
+            // [Name : Zdzichu, Age : 45]
+        });
+    }
+ 
+    // Rest Call simulation,  emits entries of Lists.newArrayList(&amp;quot;Maciek&amp;quot;, &amp;quot;Rysiek&amp;quot;, &amp;quot;Zdzichu&amp;quot;);
+    private static Observable&amp;lt;String&amp;gt; getObservableName() {
+        return Observable.from(RestService.getNames()).subscribeOn(Schedulers.io());
+ 
+    }
+    // Rest Call simulation,  emits entries of Lists.newArrayList(18, 20, 45);
+    private static Observable&amp;lt;Integer&amp;gt; getObservableAge() {
+        return Observable.from(RestService.getAges()).subscribeOn(Schedulers.io());
+ 
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Spring &amp; Guava Cache</title>
       <link>https://kgoralski.github.io/post/spring-guava-cache/</link>
       <pubDate>Wed, 09 Mar 2016 10:35:47 +0100</pubDate>
@@ -621,6 +677,33 @@ public class Main {
     </item>
     
     <item>
+      <title>Reactive Programming - Learning Resources</title>
+      <link>https://kgoralski.github.io/post/reactive-resources/</link>
+      <pubDate>Fri, 19 Feb 2016 08:41:23 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/reactive-resources/</guid>
+      <description>&lt;ol&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.reactivemanifesto.org/&#34;&gt;Manifesto&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://gist.github.com/staltz/868e7e9bc2a7b8c1f754&#34;&gt;Nice article about Reactive Programming&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://rxmarbles.com/&#34;&gt;Rx marbles &lt;/a&gt; - diagrams (better than docs)&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://reactivex.io/&#34;&gt;http://reactivex.io/&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://reactivex.io/tutorials.html&#34;&gt;Tutorials&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=BujWQSjtpl&#34;&gt;Fast Overview&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_t06LRX0DV0&#34;&gt;Reactive Programming with RxJava (Netflix)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=aEuNBk1b5OE#t=2480&#34;&gt;Meetup with Netflix&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=J8n8j0_6wYU&amp;list=PLVT0blg4rCWAACyuDZKEn1cy1CR4zhz4R&amp;index=13&#34;&gt;Reactive Streams (Akka + JS)&lt;/a&gt; - Boiling Frogs 2016 (PL)&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=LrPBHADuGuw&amp;list=PLVbNBx5Phg3Ct6pIPeWpOW37OH7F8hcMO&amp;index=14&#34;&gt;RxJava &amp; Hystrix&lt;/a&gt; -  Confitura 2015 (PL)&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.quora.com/What-are-the-main-differences-between-Akka-and-RxJava&#34;&gt;RxJava vs Akka&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://blog.danlew.net/2014/09/15/grokking-rxjava-part-1/&#34;&gt;Grokking RxJava &lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://github.com/Froussios/Intro-To-RxJava&#34;&gt;Intro to RxJava&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.coursera.org/course/reactive&#34;&gt;Principles of Reactive Programming&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://dzone.com/articles/rxjava-part-1-a-quick-introduction&#34;&gt;A Quick Introduction to RxJava&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://github.com/ReactiveX/RxJava/wiki/Additional-Reading&#34;&gt;Additional Reading&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Scala Learning Resources</title>
       <link>https://kgoralski.github.io/post/scala-sources/</link>
       <pubDate>Tue, 29 Sep 2015 08:41:23 +0100</pubDate>
@@ -664,6 +747,68 @@ public class Main {
 &lt;/li&gt;
 &lt;/ol&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Learning Resources For Beginners</title>
+      <link>https://kgoralski.github.io/post/beginners-resources/</link>
+      <pubDate>Tue, 01 Sep 2015 08:41:23 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/beginners-resources/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;text-decoration:underline;&#34;&gt;How to pick your first programming language?&lt;/span&gt;
+&lt;ol&gt;
+    &lt;li&gt;Check this &lt;a href=&#34;http://gynvael.coldwind.pl/?id=238&amp;lang=pl&#34;&gt;guide&lt;/a&gt; by Gynvael Coldwind (polish)&lt;/li&gt;
+    &lt;li&gt;4programmers.net got good &lt;a href=&#34;http://4programmers.net/Z_pogranicza/FAQ/Jaki_j%C4%99zyk_programowania_wybra%C4%87&#34;&gt;guide&lt;/a&gt; too (polish)&lt;/li&gt;
+    &lt;li&gt;Do you like &lt;a href=&#34;http://carlcheo.com/startcoding&#34;&gt;infographics&lt;/a&gt;? ;)&lt;/li&gt;
+    &lt;li&gt;My suggestions: Python, Java or C#&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;text-decoration:underline;&#34;&gt;Java Learning Resources:&lt;/span&gt;
+&lt;ol&gt;
+    &lt;li&gt;Official &lt;a href=&#34;http://docs.oracle.com/javase/tutorial/&#34;&gt;tutorial&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.caveofprogramming.com/&#34;&gt;https://www.caveofprogramming.com/&lt;/a&gt; by John Purcell&lt;/li&gt;
+    &lt;li&gt;You can find John&amp;rsquo;s tutorials on &lt;a href=&#34;https://www.udemy.com/u/johnpurcell/&#34;&gt;udemy.com&lt;/a&gt; too&lt;/li&gt;
+    &lt;li&gt;CoraxTheTutor on &lt;a href=&#34;https://www.youtube.com/user/CoraxTheTutor/playlists&#34;&gt;youtube&lt;/a&gt; (polish)&lt;/li&gt;
+    &lt;li&gt; &lt;a href=&#34;https://www.thenewboston.com/videos.php?cat=31&#34;&gt;The New Boston&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Get a book: Core Java, Thinking in Java or Java: A Beginner&amp;rsquo;s Guide by Herbert Schildt&lt;/li&gt;
+    &lt;li&gt;Bunch of tutorials can be found, &lt;a href=&#34;http://www.javacodegeeks.com/2015/01/get-your-advanced-java-programming-degree-with-these-tutorials-and-courses.html&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;span style=&#34;text-decoration:underline;&#34;&gt;Python Learning Resources:&lt;/span&gt;
+&lt;ol&gt;
+    &lt;li&gt;Python official &lt;a href=&#34;https://docs.python.org/3/&#34;&gt;docs and tutorial&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.swaroopch.com/notes/python/&#34;&gt;A Byte of Python&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.diveintopython3.net/&#34;&gt;Dive Into Python&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://github.com/CodementorIO/Python-Learning-Resources&#34;&gt;Github Python Learning Resources&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.pythonchallenge.com/&#34;&gt;http://www.pythonchallenge.com/&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://learnpythonthehardway.org/book/&#34;&gt;http://learnpythonthehardway.org&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://automatetheboringstuff.com/&#34;&gt;https://automatetheboringstuff.com/&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Nice learning resources list can be found &lt;a href=&#34;http://www.fullstackpython.com/best-python-resources.html&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;You need to decide to learn 2.7 or 3.4 version - check &lt;a href=&#34;https://wiki.python.org/moin/Python2orPython3&#34;&gt;this&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;span style=&#34;text-decoration:underline;&#34;&gt;Exercises:&lt;/span&gt;
+&lt;ol&gt;
+    &lt;li&gt;&lt;a href=&#34;http://pl.spoj.com/&#34;&gt;SPOJ&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://codingbat.com/&#34;&gt;http://codingbat.com/&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://rosettacode.org/wiki/Category:Programming_Tasks&#34;&gt;http://rosettacode.org&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.programmr.com/&#34;&gt;http://www.programmr.com/&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://projecteuler.net/&#34;&gt;https://projecteuler.net/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;span style=&#34;text-decoration:underline;&#34;&gt;Project ideas:&lt;/span&gt;
+&lt;ol&gt;
+    &lt;li&gt;1000+ Beginner Programming &lt;a href=&#34;https://www.reddit.com/r/learnprogramming/comments/2a9ygh/1000_beginner_programming_projects_xpost/&#34;&gt;Projects&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/&#34;&gt;Martyr2&lt;/a&gt;&amp;rsquo;s Mega Project List&lt;/li&gt;
+&lt;/ol&gt;
+&lt;span style=&#34;text-decoration:underline;&#34;&gt;Online Learning platforms:&lt;/span&gt;
+&lt;ol&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.udemy.com/&#34;&gt;https://www.udemy.com/&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.udacity.com/&#34;&gt;https://www.udacity.com/&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.lynda.com/&#34;&gt;http://www.lynda.com/&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.coursera.org/&#34;&gt;https://www.coursera.org/&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.codecademy.com/&#34;&gt;https://www.codecademy.com/&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.edx.org/&#34;&gt;https://www.edx.org/&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Heard that this is really good &lt;a href=&#34;https://www.edx.org/course/introduction-computer-science-harvardx-cs50x&#34;&gt;Introduction to Computer Science&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

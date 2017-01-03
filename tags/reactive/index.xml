@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reactive on Krzysztof Góralski</title>
+    <link>https://kgoralski.github.io/tags/reactive/index.xml</link>
+    <description>Recent content in Reactive on Krzysztof Góralski</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>[Krzysztof Góralski](https://kgoralski.github.io/). Released under the MIT license&lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
+    <atom:link href="https://kgoralski.github.io/tags/reactive/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Reactive Programming - Learning Resources</title>
+      <link>https://kgoralski.github.io/post/reactive-resources/</link>
+      <pubDate>Fri, 19 Feb 2016 08:41:23 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/reactive-resources/</guid>
+      <description>&lt;ol&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.reactivemanifesto.org/&#34;&gt;Manifesto&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://gist.github.com/staltz/868e7e9bc2a7b8c1f754&#34;&gt;Nice article about Reactive Programming&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://rxmarbles.com/&#34;&gt;Rx marbles &lt;/a&gt; - diagrams (better than docs)&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://reactivex.io/&#34;&gt;http://reactivex.io/&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://reactivex.io/tutorials.html&#34;&gt;Tutorials&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=BujWQSjtpl&#34;&gt;Fast Overview&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_t06LRX0DV0&#34;&gt;Reactive Programming with RxJava (Netflix)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=aEuNBk1b5OE#t=2480&#34;&gt;Meetup with Netflix&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=J8n8j0_6wYU&amp;list=PLVT0blg4rCWAACyuDZKEn1cy1CR4zhz4R&amp;index=13&#34;&gt;Reactive Streams (Akka + JS)&lt;/a&gt; - Boiling Frogs 2016 (PL)&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=LrPBHADuGuw&amp;list=PLVbNBx5Phg3Ct6pIPeWpOW37OH7F8hcMO&amp;index=14&#34;&gt;RxJava &amp; Hystrix&lt;/a&gt; -  Confitura 2015 (PL)&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.quora.com/What-are-the-main-differences-between-Akka-and-RxJava&#34;&gt;RxJava vs Akka&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://blog.danlew.net/2014/09/15/grokking-rxjava-part-1/&#34;&gt;Grokking RxJava &lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://github.com/Froussios/Intro-To-RxJava&#34;&gt;Intro to RxJava&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.coursera.org/course/reactive&#34;&gt;Principles of Reactive Programming&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://dzone.com/articles/rxjava-part-1-a-quick-introduction&#34;&gt;A Quick Introduction to RxJava&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://github.com/ReactiveX/RxJava/wiki/Additional-Reading&#34;&gt;Additional Reading&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -208,6 +208,62 @@ public class HystrixServletDefinitions {
     </item>
     
     <item>
+      <title>RxJava Async Rest Calls</title>
+      <link>https://kgoralski.github.io/post/rxjava-async/</link>
+      <pubDate>Sat, 26 Mar 2016 10:35:47 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/rxjava-async/</guid>
+      <description>&lt;p&gt;I’m not really sure if the code snippet below is 100% correct… Schedulers.io() is not probably the way to go ;)
+I wanted to try RxJava for two Async Rest Calls with blocking at the end.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;package org.rx.java.tutorial;
+ 
+import java.util.List;
+ 
+ 
+import rx.Observable;
+import rx.functions.Func2;
+import rx.schedulers.Schedulers;
+ 
+public class App {
+ 
+    public static void main(String[] args) {
+        List&amp;lt;Person&amp;gt; zipped = Observable
+                .zip(getObservableName(), getObservableAge(), new Func2&amp;lt;String, Integer, Person&amp;gt;() {
+ 
+                    @Override
+                    public Person call(String name, Integer age) {
+                        Person person = new Person();
+                        person.setName(name);
+                        person.setAge(age);
+                        return person;
+                    }
+                }).toList().toBlocking().single();
+ 
+        zipped.stream().forEach(person -&amp;gt; {
+            System.out.println(&amp;quot;[Name : &amp;quot; + person.getName() + &amp;quot;, Age : &amp;quot; + person.getAge() + &amp;quot;]&amp;quot;);
+            // [Name : Maciek, Age : 18]
+            // [Name : Rysiek, Age : 20]
+            // [Name : Zdzichu, Age : 45]
+        });
+    }
+ 
+    // Rest Call simulation,  emits entries of Lists.newArrayList(&amp;quot;Maciek&amp;quot;, &amp;quot;Rysiek&amp;quot;, &amp;quot;Zdzichu&amp;quot;);
+    private static Observable&amp;lt;String&amp;gt; getObservableName() {
+        return Observable.from(RestService.getNames()).subscribeOn(Schedulers.io());
+ 
+    }
+    // Rest Call simulation,  emits entries of Lists.newArrayList(18, 20, 45);
+    private static Observable&amp;lt;Integer&amp;gt; getObservableAge() {
+        return Observable.from(RestService.getAges()).subscribeOn(Schedulers.io());
+ 
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Spring &amp; Guava Cache</title>
       <link>https://kgoralski.github.io/post/spring-guava-cache/</link>
       <pubDate>Wed, 09 Mar 2016 10:35:47 +0100</pubDate>
