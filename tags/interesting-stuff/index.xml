@@ -10,6 +10,42 @@
     <atom:link href="https://kgoralski.github.io/tags/interesting-stuff/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Interesting Stuff - Volume II</title>
+      <link>https://kgoralski.github.io/post/interesting-stuff-II/</link>
+      <pubDate>Fri, 06 Jan 2017 15:35:47 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/interesting-stuff-II/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.redhat.com/blog/2016/12/09/spring-cloud-for-microservices-compared-to-kubernetes/&#34;&gt;Spring Cloud for Microservices Compared to Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.codecentric.de/en/2016/04/event-driven-microservices-spring-cloud-stream/&#34;&gt;Event Driven Microservices with Spring Cloud Stream&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://thenewstack.io/ten-commandments-microservices/&#34;&gt;The Ten Commandments of Microservices&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://martinfowler.com/bliki/MicroservicePrerequisites.html&#34;&gt;You need to be this tall to use Microservices&lt;/a&gt; and &lt;a href=&#34;https://news.ycombinator.com/item?id=12509533&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.oreilly.com/ideas/swarm-v-fleet-v-kubernetes-v-mesos&#34;&gt;Docker Swarm vs Fleet vs Kubernetes vs Mesos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://techbeacon.com/one-year-using-kubernetes-production-lessons-learned&#34;&gt;One year using Kubernetes in production: Lessons learned&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615&#34;&gt;Udacity Course: Scalable Microservices with Kubernetes by Google&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://kubernetes.io/docs/tutorials/kubernetes-basics/&#34;&gt;Official Kubernetes Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=AoDhQt8PtUQ&#34;&gt;Docker + Kubernetes + OpenShift Demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://virtualjug.com/kubernetes-for-java-developers/&#34;&gt;Kubernetes for Java Developers&lt;/a&gt; and &lt;a href=&#34;https://fabric8.io/presentations/kubernetes-for-java-developers/#/&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.xebialabs.com/2016/12/15/before-you-go-over-the-container-cliff-with-docker-mesos-etc-points-to-consider/&#34;&gt;Before You Go Over the Container Cliff with Docker, Mesos etc: Points to Consider&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spotify/docker-kafka&#34;&gt;Docker &amp;amp; Kafka by Spotify&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://rajkrrsingh.blogspot.com/2016/02/running-apache-kafka-in-docker-container.html&#34;&gt;Running Kafka in Docker Container&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://thehftguy.com/2016/11/01/docker-in-production-an-history-of-failure/&#34;&gt;Docker in Production: A History of Failure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=a6mUgiR0g9w&#34;&gt;Apache Mesos Ecosystem at Allegro - First Year of Production Use&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jmnarloch.wordpress.com/2016/07/13/spring-cloud-stream-hermes-binder/&#34;&gt;Spring Cloud Stream &amp;amp; Hermes Messaging&lt;/a&gt; and &lt;a href=&#34;https://prezi.com/m/i0tpqxeimbmz/hermes-loses-events/&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://hammerprinciple.com/therighttool&#34;&gt;Programming languages ranker &amp;amp; comparisons&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/pulse/scala-syntax-7-images-michele-sciabarr%C3%A0&#34;&gt;Scala Syntax in 7 images&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://imgur.com/fR6Ynq9&#34;&gt;Agile Landscape&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/chrislusf/seaweedfs&#34;&gt;SeaweedFS&lt;/a&gt; - a simple and highly scalable distributed file system&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://mapstruct.org/&#34;&gt;MapStruct&lt;/a&gt; - &amp;ldquo;Java bean mappings, the easy way&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.baeldung.com/spring-security-oauth-jwt&#34;&gt;Using JWT with Spring Security OAuth&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://opensource.googleblog.com/2017/01/grumpy-go-running-python.html?m=1&#34;&gt;Grumpy - Golang running Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://hyperpolyglot.org/&#34;&gt;Programming Languages - commonly used features in a side-by-side format&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=ecIWPzGEbFc&#34;&gt;&amp;ldquo;Uncle&amp;rdquo; Bob Martin - &amp;ldquo;The Future of Programming&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Interesting Stuff - Volume I</title>
       <link>https://kgoralski.github.io/post/interesting-stuff-I/</link>
       <pubDate>Mon, 30 May 2016 10:35:47 +0100</pubDate>
