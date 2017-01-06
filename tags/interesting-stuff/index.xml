@@ -19,6 +19,7 @@
 &lt;li&gt;&lt;a href=&#34;https://developers.redhat.com/blog/2016/12/09/spring-cloud-for-microservices-compared-to-kubernetes/&#34;&gt;Spring Cloud for Microservices Compared to Kubernetes&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.codecentric.de/en/2016/04/event-driven-microservices-spring-cloud-stream/&#34;&gt;Event Driven Microservices with Spring Cloud Stream&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://thenewstack.io/ten-commandments-microservices/&#34;&gt;The Ten Commandments of Microservices&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.vinaysahni.com/best-practices-for-building-a-microservice-architecture&#34;&gt;Best Practices for Building a Microservice Architecture&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://martinfowler.com/bliki/MicroservicePrerequisites.html&#34;&gt;You need to be this tall to use Microservices&lt;/a&gt; and &lt;a href=&#34;https://news.ycombinator.com/item?id=12509533&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.oreilly.com/ideas/swarm-v-fleet-v-kubernetes-v-mesos&#34;&gt;Docker Swarm vs Fleet vs Kubernetes vs Mesos&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://techbeacon.com/one-year-using-kubernetes-production-lessons-learned&#34;&gt;One year using Kubernetes in production: Lessons learned&lt;/a&gt;&lt;/li&gt;
