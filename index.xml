@@ -310,6 +310,151 @@ EXPOSE 8080
     </item>
     
     <item>
+      <title>Interesting Stuff - Volume I</title>
+      <link>https://kgoralski.github.io/post/interesting-stuff-I/</link>
+      <pubDate>Mon, 30 May 2016 10:35:47 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/interesting-stuff-I/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.adam-bien.com/roller/abien/entry/the_ingredients_and_roadmap_of&#34;&gt;Java EE 8 &amp; 9 Road map&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.adam-bien.com/roller/abien/entry/load_balancing_java_ee_microservices&#34;&gt;Load Balancing Microservices with Ha-Proxy&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLPIzp-E1msrYicmovyeuOABO4HxVPlhEA&#34;&gt;Java 2016 videos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://vimeo.com/album/4133413&#34;&gt;JavaZone 2016 videos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://vimeo.com/181948154&#34;&gt;RxJava in legacy projects&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://spring.io/blog/2016/09/22/new-in-spring-5-functional-web-framework&#34;&gt;Spring 5: Functional Web Framework&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://github.com/akarnokd/akarnokd-misc/issues/2&#34;&gt;RxJava 1.0 vs RxJava 2.0 vs Reactor - Benchmarks&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://yonik.com/solr-tutorial/&#34;&gt;Apache Solr Tutorial&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://allegro.tech/2016/09/CQK-TOP-10.html&#34;&gt;Performance and Availability pitfalls in the Microservices Architecture — CQK Top 10&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://microprofile.io/blog/2016/09/microprofile-at-javaone&#34;&gt;Announcing MicroProfile 1.0&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://swift.org/blog/swift-3-0-released/&#34;&gt;Swift 3.0 Released&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLDWZ5uzn69eyh791ZTkEA9OaTxVpGY8_g&#34;&gt;Golang UK Conference 2016 - videos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://monzo.com/blog/2016/09/19/building-a-modern-bank-backend/&#34;&gt;Building a Modern Bank Backend (Golang)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://dave.cheney.net/2016/09/18/go-1-8-performance-improvements-one-month-in&#34;&gt;Go 1.8 performance improvements&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://medium.com/@theflapjack103/the-way-of-the-gopher-6693db15ae1f#.rmz5gqru9&#34;&gt;Making the Switch from Node.js to Golang&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://gradle.org/blog/linkedin-introduces-pygradle-open-source-python-plugin-gradle/&#34;&gt;{py}gradle, an open source Python plugin for Gradle&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://torusware.com/blog/2016/09/hands-on-orchestration-docker-1-12-swarm-vs-kubernetes/&#34;&gt;Docker Swarm vs Kubernetes&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://blog.docker.com/2016/09/java-development-using-docker/&#34;&gt;Live debugging Java with docker&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://highscalability.com/blog/2016/9/28/how-uber-manages-a-million-writes-per-second-using-mesos-and.html&#34;&gt;How Uber manages million writes per second using Mesos and Cassandra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Oracle, Java EE 8 Drama &amp; releted stuff:
+&lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;https://dzone.com/articles/java-ee-8-in-crisis?utm_content=buffer8f8be&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer&#34;&gt;Java EE 8 in Crisis!&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://jaxenter.com/debate-where-is-java-ee-headed-to-127356.html&#34;&gt;The debate continues: Where is Java EE headed to?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://arstechnica.com/information-technology/2016/07/how-oracles-business-as-usual-is-threatening-to-kill-java/&#34;&gt;How Oracle’s business as usual is threatening to kill Java&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://techsticles.blogspot.ch/2016/07/oracle-and-fall-of-java-ee.html&#34;&gt;Oracle and the fall of Java EE&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://blog.takipi.com/java-ee-vs-java-se-has-oracle-given-up-on-enterprise-software/&#34;&gt;Java EE vs Java SE: Has Oracle Given up on Enterprise Software?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/myfear/nine-neins-where-java-ee-will-never-take-you?utm_content=buffer3caf9&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer&#34;&gt;Nine Neins - where Java EE will never take you&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://microprofile.io/&#34;&gt;MicroProfile.io&lt;/a&gt; - optimizing Enterprise Java for a microservices architecture&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://coconut-lang.org/&#34;&gt;Coconut&lt;/a&gt; &lt;strong&gt;-&lt;/strong&gt; simple, elegant, Pythonic functional programming language&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://elixir-lang.org/blog/2016/06/21/elixir-v1-3-0-released/&#34;&gt;Elixir v1.3 released&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=u25Xc88d_iE&amp;utm_content=bufferad7ee&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer&#34;&gt;High-Performance JDBC by Vlad Mihalcea&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.thoughts-on-java.org/5-ways-to-initialize-lazy-relations-and-when-to-use-them/&#34;&gt;5 ways to initialize lazy relationsships and when to use them&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLmM51wkBlj0qPWAVylt-zsxAuZSXYMKNx&#34;&gt;infoShare 2016&lt;/a&gt; - videos&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=RFstLZc_2y8&#34;&gt;Confitura 2016&lt;/a&gt; - video&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://dzone.com/articles/exception-handling-in-real-life-applications?utm_content=buffer04b51&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer&#34;&gt;Exception Handling in Real-Life Java Applications&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.javaslang.io/&#34;&gt;Javaslang&lt;/a&gt; - functional library for Java 8+&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://dzone.com/articles/junit-5-basics&#34;&gt;JUnit 5 - Basics&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://deltaspike.apache.org/&#34;&gt;Apache DeltaSpike&lt;/a&gt; - looking for something like Spring Data?&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://shipilev.net/blog/2016/close-encounters-of-jmm-kind/&#34;&gt;Close Encounters of The Java Memory Model Kind&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://jdk9.java.net/download/&#34;&gt;JDK™ 9 Early Access Releases&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://whatpulse.org/&#34;&gt;WhatPulse&lt;/a&gt; - all you need to know everything about your computing habits&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://puppet.com/resources/white-paper/2016-state-of-devops-report&#34;&gt;2016 State of DevOps Report&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://blog.codefx.org/java/dev/java-9-optional/&#34;&gt;Java 9 Additions To Optional&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://medium.com/chute-engineering/graphql-in-the-age-of-rest-apis-b10f2bf09bba#.ukkywcnhr&#34;&gt;GraphQL&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://medium.com/javascript-scene/what-is-webassembly-the-dawn-of-a-new-era-61256ec5a8f6#.h13t7bddd&#34;&gt;What is WebAssembly?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://cultureofdevelopment.com/blog/build-your-first-thing-with-web-assembly/&#34;&gt;Build Your First Thing With WebAssembly&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://dzone.com/articles/mockbean-spring-boots-missing-ingredient?utm_content=buffer30136&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer&#34;&gt;@MockBean&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://gradle.org/videos/gradle-native-cc-adoption-package/&#34;&gt;Gradle Native C &amp; C++ Build Tool Guide&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/research/developer-survey-2016&#34;&gt;Stack Overflow Developer Survey Results &lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.rust-lang.org/&#34;&gt;Rust Programming Language&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.haneycodes.net/npm-left-pad-have-we-forgotten-how-to-program/&#34;&gt;Left-pad npm Node.js Drama&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://appliedscala.com/blog/2016/scala-popularity/&#34;&gt;Analyzing Scala popularity&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://scala.epfl.ch/index.html#education&#34;&gt;Scala Center&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.lightbend.com/lagom&#34;&gt;Lightbend Lagom - Reactive Microservices&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://spring.io/blog/2015/06/17/devtools-in-spring-boot-1-3&#34;&gt;DevTools in Spring Boot 1.3 (LiveReload included)&lt;/a&gt; and &lt;a href=&#34;https://www.youtube.com/watch?v=A70NMxV13TI&#34;&gt;here &lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://bottega.com.pl/artykuly-i-prezentacje&#34;&gt;Free IT Stuff from Bottega&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.javacodegeeks.com/2015/09/java-concurrency-essentials.html&#34;&gt;Java Concurrency Essentials Tutorial&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.javacodegeeks.com/2015/07/understanding-callable-and-spring-deferredresult.html&#34;&gt;Understanding Callable and Spring DeferredResult&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://github.com/holdenk/spark-testing-base&#34;&gt;Spark Testing Base&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://github.com/jakehschwartz/spring-boot-cucumber-example&#34;&gt;Spring Boot Cucumber Example&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.javacodegeeks.com/2016/03/10-awesome-python-tutorials-kick-start-projects.html&#34;&gt;10 Awesome Python Tutorials to Kick-Start your Projects&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://medium.com/@msandin/strategies-for-organizing-code-2c9d690b6f33#.4utxbh7x7&#34;&gt;Four Strategies for Organizing Code&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=UhG8rg_kyDE&#34;&gt;Jinkubator #41 - Kotlin - Paweł Byszewski&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://projectlombok.org/&#34;&gt;Project Lombok&lt;/a&gt; - small but nice tool&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=RpfQ8AHwEvg&#34;&gt;Hystrix - Managing failures in distributed systems&lt;/a&gt; - WJUG&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=LrPBHADuGuw&amp;list=PLVbNBx5Phg3Ct6pIPeWpOW37OH7F8hcMO&amp;index=14&#34;&gt;RxJava &amp; Hystrix - perfect match for distributed applications&lt;/a&gt; - Confitura&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=LCr3XyHdaZk&#34;&gt;Garbage Collector w pigułce&lt;/a&gt; - WJUG&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Xx2-Snbb_nA&amp;list=PLVbNBx5Phg3Ct6pIPeWpOW37OH7F8hcMO&amp;index=19&#34;&gt;-XX:+UseG1GC&lt;/a&gt; - Confitura&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=rWdgla54bcc&#34;&gt;JVM Internals&lt;/a&gt; - WJUG&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=5xPLkUCHn5Y&#34;&gt;CompletableFuture i nie tylko – programowanie reaktywne w Javie&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://labs.unacast.com/2016/03/03/building-microservices-with-akka-http/&#34;&gt;Building microservices with Scala and akka-http&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://dzone.com/articles/exploring-message-brokers&#34;&gt;Exploring Message Brokers&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://career.guru99.com/top-25-jms-java-message-service-interview-questions/&#34;&gt;Top 25 JMS (Java Message Service) Interview Questions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/35329845/difference-between-completablefuture-future-and-observable-rxjava&#34;&gt;Difference between completableFuture,Future and Observable Rxjava&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://confluence.jetbrains.com/display/IDEADEV/IDEA+16+EAP&#34;&gt;IntelliJ IDEA Early Access Program&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&#34;title may-blank &#34; href=&#34;http://blog.jetbrains.com/kotlin/2016/02/kotlin-1-0-released-pragmatic-language-for-jvm-and-android/&#34;&gt;Kotlin 1.0 Released&lt;/a&gt; and &lt;a href=&#34;https://www.reddit.com/r/programming/comments/45wcnd/kotlin_10_released_pragmatic_language_for_jvm_and/&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://spring.io/blog/2016/02/16/reactor-2-5-a-second-generation-reactive-foundation-for-the-jvm&#34;&gt;Spring Reactor 2.5&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://dzone.com/articles/profile-of-a-successful-java-developer-in-2016&#34;&gt;Profile of successful Java Developer in 2016&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://gingearstudio.com/why-i-quit-my-dream-job-at-ubisoft&#34;&gt;Why I Quit my Dream Job at Ubisoft&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/predictionio/sf-scala-dase2015-44112226&#34;&gt;PredictionIO&lt;/a&gt; – A Machine Learning Server in Scala&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/5693346/when-to-use-actors-instead-of-messaging-solutions-such-as-websphere-mq-or-tibco&#34;&gt;Actors or Messaging?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.gitkraken.com/&#34;&gt;GitKraken&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://nickcraver.com/blog/2016/02/17/stack-overflow-the-architecture-2016-edition/&#34;&gt;Stack Overflow: The Architecture&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/29018294/akka-events-between-local-and-remote-actors&#34;&gt;Scala: local &amp; remote actors&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLVbNBx5Phg3Ct6pIPeWpOW37OH7F8hcMO&#34;&gt;Confitura 2015 - movies&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLVT0blg4rCWAACyuDZKEn1cy1CR4zhz4R&#34;&gt;Boiling Frogs - movies&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/channel/UC2coGyxf5x_CzJ3l4F-N-Sw/videos&#34;&gt;Warsaw JUG - movies&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/channel/UCvj_1SWNU4diTM2Z2KCUHug/videos&#34;&gt;Wrocław JUG - movies&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.reddit.com/r/java/comments/3requx/javaone_2015_sessions/&#34;&gt;JavaOne 2015&lt;/a&gt; - sessions&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.syncfusion.com/resources/techportal/ebooks&#34;&gt;Free IT Ebooks&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://medium.com/free-stuff/2000-programming-resources-c2c835001216#.smkcn9bxs&#34;&gt;621+ Programming Resources&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://linkerd.io/&#34;&gt;linkerd.io&lt;/a&gt; - Modern RPC proxy for microservices&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.ybrikman.com/writing/2014/09/29/nodejs-vs-play-framework/&#34;&gt;Node.js vs Play Framework&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=8z3h4Uv9YbE&#34;&gt;The Play Framework at LinkedIn: Productivity and Performance at Scale&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.reddit.com/r/java/comments/3requx/javaone_2015_sessions/&#34;&gt;JavaOne 2015 Sessions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/j1/&#34;&gt;Project Jigsaw @ JavaOne 2015&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=cWD0a7f3YxY&amp;feature=youtu.be&amp;t=44s&#34;&gt;20th airhacks.tv Questions and Answers&lt;/a&gt; - Oracle Java Drama = just rumors&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://koziolekweb.pl/2015/10/28/co-gdzie-kiedy-czyli-przyklad-refaktoryzacji-w-kierunku-fp/&#34;&gt;Przykład refaktoryzacji w kierunku FP&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://gradle.org/maven_vs_gradle/&#34;&gt;Maven vs Gradle Feature Comparison&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/1028858/useful-eclipse-java-code-templates&#34;&gt;Useful Eclipse Java Code Templates&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://javaconceptoftheday.com/most-asked-java-interview-programs-with-solutions/&#34;&gt;40 Most Asked Java Interview Programs With Solutions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://netbeans.org/community/releases/81/&#34;&gt;NetBeans 8.1 has been released&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.javacodegeeks.com/2015/06/5-features-in-java-9-that-will-change-how-you-develop-software-and-2-that-wont.html?      utm_content=buffer6db88&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer&#34;&gt;5 Features in Java 9 that WILL Change How You Develop Software (and 2 That Won’t)&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://jaxenter.com/top-10-useful-yet-paranoid-java-programming-techniques-119498.html&#34;&gt;Top 10 useful, yet paranoid Java programming techniques&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.javacodegeeks.com/2015/08/java-8-se-optional-a-strict-approach.html&#34;&gt;Java 8 SE Optional&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.tutorialspoint.com/guava/guava_optional_class.htm&#34;&gt;Guava Optional&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.mkyong.com/java8/java-8-lambda-comparator-example/&#34;&gt;Java 8 Lambda : Comparator example&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.mkyong.com/java8/java-8-foreach-examples/&#34;&gt;Java 8 forEach examples&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.javacodegeeks.com/2015/01/get-your-advanced-java-programming-degree-with-these-tutorials-and-courses.html&#34;&gt;Bunch of Java Tutorials&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://jaxenter.com/7-java-performance-metrics-to-watch-after-a-major-release-120590.html&#34;&gt;7 Java performance metrics to watch after a major release&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://jaxenter.com/how-to-use-java-8-functional-programming-to-generate-an-alphabetic-sequence-120516.html&#34;&gt;Using Java 8 functional programming&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html&#34;&gt;Spring Framework - common application properties&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Bonus 1: &lt;a href=&#34;https://www.packtpub.com/packt/offers/free-learning&#34;&gt;Everyday free IT Ebook&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Bonus 2: &lt;a href=&#34;http://www.informationisbeautiful.net/visualizations/million-lines-of-code/&#34;&gt;Is a million lines of code a lot? :)&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;How to pick programming language... &lt;a href=&#34;http://www.conowego.pl/fileadmin/redaktor_folder/news/2015/08/programowanie.jpg&#34;&gt;in USA&lt;/a&gt; ;)&lt;/li&gt;
+    &lt;li&gt;Stack Overflow &lt;a href=&#34;http://stackoverflow.com/research/developer-survey-2015&#34;&gt;Developer Survey &lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;New &lt;a href=&#34;http://programistamag.pl/programista-7-2015-38/&#34;&gt;ProgramistaMag&lt;/a&gt; 07/2015&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://sourceforge.net/projects/bugn.berlios/&#34;&gt;bug.n&lt;/a&gt; - tiling window manager for Windows&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://i3wm.org/&#34;&gt;i3wm&lt;/a&gt; and &lt;a href=&#34;http://awesome.naquadah.org/&#34;&gt;awesome&lt;/a&gt; - tiling window manager for Linux&lt;/li&gt;
+    &lt;li&gt;Book &#34;&lt;a href=&#34;http://gynvael.coldwind.pl/?id=547&#34;&gt;Zrozumieć programowanie&lt;/a&gt;&#34; by Gynvael Coldwind - release Autumn 2015&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://code.google.com/p/conemu-maximus5/&#34;&gt;ConEmu&lt;/a&gt;, better command line for Windows&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://github.com/01org/acat/releases&#34;&gt;ACAT&lt;/a&gt; Assistive Context Aware Toolkit - Stephen Hawking&#39;s Speech Computer - Open Source&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.regexr.com/&#34;&gt;http://www.regexr.com/&lt;/a&gt; - nice online regex tool&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.javased.com/&#34;&gt;JavaSED&lt;/a&gt; - Java Code Examples&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;https://atom.io/&#34;&gt;atom.io&lt;/a&gt; - text editor from GitHub for free (MIT licensed)&lt;/li&gt;
+    &lt;li&gt;IT Ebooks for &lt;a href=&#34;https://www.syncfusion.com/resources/techportal/ebooks&#34;&gt;Free&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;New Eclipse, &lt;a href=&#34;https://projects.eclipse.org/releases/mars&#34;&gt;Mars&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;JUnit &lt;a href=&#34;http://carlosbecker.com/posts/junit-rules/&#34;&gt;Rules&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://modelmapper.org/&#34;&gt;ModelMapper&lt;/a&gt; library&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://wiki.fasterxml.com/JacksonJsonViews&#34;&gt;JSON Views &lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://spring.io/blog/2013/07/03/spring-security-java-config-preview-web-security/&#34;&gt;Spring Security&lt;/a&gt; Tutorial&lt;/li&gt;
+    &lt;li&gt;Check this &lt;a href=&#34;https://medium.com/@Kinmarui&#34;&gt;blog&lt;/a&gt; by Kinmarui&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
       <title>akka-http-slick-guice example</title>
       <link>https://kgoralski.github.io/post/akka-http-slick-guice/</link>
       <pubDate>Tue, 03 May 2016 08:41:23 +0100</pubDate>
@@ -759,68 +904,6 @@ public class Main {
 &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Learning Resources For Beginners</title>
-      <link>https://kgoralski.github.io/post/beginners-resources/</link>
-      <pubDate>Tue, 01 Sep 2015 08:41:23 +0100</pubDate>
-      
-      <guid>https://kgoralski.github.io/post/beginners-resources/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;text-decoration:underline;&#34;&gt;How to pick your first programming language?&lt;/span&gt;
-&lt;ol&gt;
-    &lt;li&gt;Check this &lt;a href=&#34;http://gynvael.coldwind.pl/?id=238&amp;lang=pl&#34;&gt;guide&lt;/a&gt; by Gynvael Coldwind (polish)&lt;/li&gt;
-    &lt;li&gt;4programmers.net got good &lt;a href=&#34;http://4programmers.net/Z_pogranicza/FAQ/Jaki_j%C4%99zyk_programowania_wybra%C4%87&#34;&gt;guide&lt;/a&gt; too (polish)&lt;/li&gt;
-    &lt;li&gt;Do you like &lt;a href=&#34;http://carlcheo.com/startcoding&#34;&gt;infographics&lt;/a&gt;? ;)&lt;/li&gt;
-    &lt;li&gt;My suggestions: Python, Java or C#&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;text-decoration:underline;&#34;&gt;Java Learning Resources:&lt;/span&gt;
-&lt;ol&gt;
-    &lt;li&gt;Official &lt;a href=&#34;http://docs.oracle.com/javase/tutorial/&#34;&gt;tutorial&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;https://www.caveofprogramming.com/&#34;&gt;https://www.caveofprogramming.com/&lt;/a&gt; by John Purcell&lt;/li&gt;
-    &lt;li&gt;You can find John&amp;rsquo;s tutorials on &lt;a href=&#34;https://www.udemy.com/u/johnpurcell/&#34;&gt;udemy.com&lt;/a&gt; too&lt;/li&gt;
-    &lt;li&gt;CoraxTheTutor on &lt;a href=&#34;https://www.youtube.com/user/CoraxTheTutor/playlists&#34;&gt;youtube&lt;/a&gt; (polish)&lt;/li&gt;
-    &lt;li&gt; &lt;a href=&#34;https://www.thenewboston.com/videos.php?cat=31&#34;&gt;The New Boston&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;Get a book: Core Java, Thinking in Java or Java: A Beginner&amp;rsquo;s Guide by Herbert Schildt&lt;/li&gt;
-    &lt;li&gt;Bunch of tutorials can be found, &lt;a href=&#34;http://www.javacodegeeks.com/2015/01/get-your-advanced-java-programming-degree-with-these-tutorials-and-courses.html&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;span style=&#34;text-decoration:underline;&#34;&gt;Python Learning Resources:&lt;/span&gt;
-&lt;ol&gt;
-    &lt;li&gt;Python official &lt;a href=&#34;https://docs.python.org/3/&#34;&gt;docs and tutorial&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://www.swaroopch.com/notes/python/&#34;&gt;A Byte of Python&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://www.diveintopython3.net/&#34;&gt;Dive Into Python&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;https://github.com/CodementorIO/Python-Learning-Resources&#34;&gt;Github Python Learning Resources&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://www.pythonchallenge.com/&#34;&gt;http://www.pythonchallenge.com/&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://learnpythonthehardway.org/book/&#34;&gt;http://learnpythonthehardway.org&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;https://automatetheboringstuff.com/&#34;&gt;https://automatetheboringstuff.com/&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;Nice learning resources list can be found &lt;a href=&#34;http://www.fullstackpython.com/best-python-resources.html&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;You need to decide to learn 2.7 or 3.4 version - check &lt;a href=&#34;https://wiki.python.org/moin/Python2orPython3&#34;&gt;this&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;span style=&#34;text-decoration:underline;&#34;&gt;Exercises:&lt;/span&gt;
-&lt;ol&gt;
-    &lt;li&gt;&lt;a href=&#34;http://pl.spoj.com/&#34;&gt;SPOJ&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://codingbat.com/&#34;&gt;http://codingbat.com/&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://rosettacode.org/wiki/Category:Programming_Tasks&#34;&gt;http://rosettacode.org&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://www.programmr.com/&#34;&gt;http://www.programmr.com/&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;https://projecteuler.net/&#34;&gt;https://projecteuler.net/&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;span style=&#34;text-decoration:underline;&#34;&gt;Project ideas:&lt;/span&gt;
-&lt;ol&gt;
-    &lt;li&gt;1000+ Beginner Programming &lt;a href=&#34;https://www.reddit.com/r/learnprogramming/comments/2a9ygh/1000_beginner_programming_projects_xpost/&#34;&gt;Projects&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/&#34;&gt;Martyr2&lt;/a&gt;&amp;rsquo;s Mega Project List&lt;/li&gt;
-&lt;/ol&gt;
-&lt;span style=&#34;text-decoration:underline;&#34;&gt;Online Learning platforms:&lt;/span&gt;
-&lt;ol&gt;
-    &lt;li&gt;&lt;a href=&#34;https://www.udemy.com/&#34;&gt;https://www.udemy.com/&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;https://www.udacity.com/&#34;&gt;https://www.udacity.com/&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://www.lynda.com/&#34;&gt;http://www.lynda.com/&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;https://www.coursera.org/&#34;&gt;https://www.coursera.org/&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;https://www.codecademy.com/&#34;&gt;https://www.codecademy.com/&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;https://www.edx.org/&#34;&gt;https://www.edx.org/&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;Heard that this is really good &lt;a href=&#34;https://www.edx.org/course/introduction-computer-science-harvardx-cs50x&#34;&gt;Introduction to Computer Science&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
