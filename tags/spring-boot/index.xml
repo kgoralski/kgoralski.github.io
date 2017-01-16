@@ -25,7 +25,7 @@ Spring Boot
 REST JAX-RS and Jersey Proxy Client
 HATEOAS Example
 Sprind Data JPA with H2 Database
-Spring Data NoSQL with Apache Cassandra (from Docker for App, embedded for Tests)
+Spring Data NoSQL with Apache Cassandra
 Spring Data REST
 Tests with Spock
 Gradle Kotlin Script with multi modules
