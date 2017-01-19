@@ -92,7 +92,7 @@ Gradle Kotlin Script with multi modules
 &lt;li&gt;Immutability&lt;/li&gt;
 &lt;li&gt;Data Class! Better than Lombok :)&lt;/li&gt;
 &lt;li&gt;Type Inference&lt;/li&gt;
-&lt;li&gt;Pattern Matching&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;when statements&amp;rdquo; (kind of pattern matching)&lt;/li&gt;
 &lt;li&gt;Gotta watchout on empty constructors while using Java Frameworks (Jackson etc.)&lt;/li&gt;
 &lt;li&gt;Intellij IDEA can convert Java to Kotlin&lt;/li&gt;
 &lt;li&gt;Constructor Injection Preference&lt;/li&gt;
