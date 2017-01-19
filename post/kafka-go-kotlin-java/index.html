@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Hello World: Apache Kafka &#43; Go, Kotlin &amp; Java&middot; Krzysztof Góralski</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Krzysztof Góralski">
+	<meta name="description" content="Development Blog">
+	<meta name="keywords" content="java, jvm, golang">
+	<meta name="generator" content="Hugo 0.19-DEV" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://kgoralski.github.io/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="https://kgoralski.github.io/favicon.ico" type="image/x-icon">
+
+	<!-- RSS -->
+	
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+    <header class="site-header">
+	<div class="branding">
+		<a href="https://kgoralski.github.io/">
+		<img class="avatar" src="https://www.gravatar.com/avatar/7451b46a955132fa421fa5d59fde3e94?s=100&d=identicon" alt=""/>
+		</a>
+		<h1 class="site-title">
+			<a href="https://kgoralski.github.io/">Krzysztof Góralski</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+	      	
+
+	      	<li>
+	<a href="https://kgoralski.github.io/" title="">
+		<i class="fa fa-fw fa-home"></i>
+	</a>
+</li>
+
+<li>
+	<a href="https://kgoralski.github.io/index.xml" title="Subcribe">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+<li>
+	<a href="mailto:goralski.k@gmail.com" title="Email">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="https://bitbucket.org/kgoralski" title="Bitbucket">
+		<i class="fa fa-fw fa-bitbucket"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/kgoralski" title="GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+<li>
+	<a href="https://www.linkedin.com/in/krzysztofgoralski" title="LinkedIn">
+		<i class="fa fa-fw fa-linkedin"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/k_goralski" title="Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+	    </ul>
+	</nav>
+</header>
+
+
+    <div class="content">
+    <article>
+		<header>
+			<h1 class="title">Hello World: Apache Kafka &#43; Go, Kotlin &amp; Java</h1>
+			<p class="meta">
+    January 19, 2017 &middot; 2 minute read
+
+    
+        &middot; Tags:
+            <a href="https://kgoralski.github.io/tags/go">Go</a>
+            , <a href="https://kgoralski.github.io/tags/java">Java</a>
+            , <a href="https://kgoralski.github.io/tags/kotlin">Kotlin</a>
+            , <a href="https://kgoralski.github.io/tags/spring-boot">Spring Boot</a>
+            , <a href="https://kgoralski.github.io/tags/spring-cloud-stream">Spring Cloud Stream</a>
+            
+</p>
+
+		</header>
+
+	<section class="post-content">
+		
+
+<p>Check the example here: <a href="https://github.com/kgoralski/go-kotlin-java-kafka">https://github.com/kgoralski/go-kotlin-java-kafka</a></p>
+
+<pre><code>Java - demo-java-source with Spring Cloud Stream - localhost:8080
+Kotlin - demo-kotlin-sink with Spring Cloud Stream - localhost:8081 (Consumer)
+Go aka Golang - demo-go-sink with Shopify/sarama (Kafka Client) - localhost:8082 (Consumer)
+Apache Kafka as Message Broker
+Go Shopify/sarama - Apache Kafka Client
+Go HTTP/2 Push example (just for fun)
+Gradle
+</code></pre>
+
+<p>Running Kafka inside Docker (<a href="https://github.com/spotify/docker-kafka">spotify/kafka</a>) to play with it locally :</p>
+
+<pre><code>docker run --name spotifykafka -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=localhost --env ADVERTISED_PORT=9092 spotify/kafka 
+</code></pre>
+
+<p>to get Shopify/sarama lib - Kafka client:</p>
+
+<pre><code>go get github.com/Shopify/sarama
+</code></pre>
+
+<h3 id="how-to-run-it">How to run it</h3>
+
+<ol>
+<li>Run docker spotify/kafka</li>
+<li>Run Java/Kotlin/Go app from IDE (Prefer IDEA &amp; Gogland)</li>
+<li>Send request to Java Source App - POST <a href="http://localhost:8080/message">http://localhost:8080/message</a> {&ldquo;name&rdquo;: &ldquo;Krzysztof&rdquo;}</li>
+<li>Both Go and Kotlin app will print the messages on their consoles, something like this:
+<code>
+INFO 22360 --- [afka-listener-1] com.example.SampleSink  Kotlin received: Krzysztof
+</code></li>
+</ol>
+
+<pre><code>Golang received: Krzysztof
+
+</code></pre>
+
+<h3 id="content-type-with-go-application-problem">Content-Type with Go Application Problem</h3>
+
+<p>If you have Spring Applications, you can just set content-type inside properties like this:</p>
+
+<pre><code>spring.cloud.stream.bindings.output.content-type=application/json
+</code></pre>
+
+<p>But Go Shopify/sarama client has problem with it, I used binary format, this way:</p>
+
+<pre><code>spring.cloud.stream.bindings.output.producer.headerMode=raw
+</code></pre>
+
+<p>And my source in Java looks like this:</p>
+
+<pre><code class="language-java">	@PostMapping(path = &quot;/message&quot;, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public @ResponseBody void sendMessage(@RequestBody MessageDto message) throws JsonProcessingException {
+		byte[] bytes = objectMapper.writeValueAsBytes(message);
+
+		// normally you can use something like this instead of bytes :
+		// MessageBuilder.withPayload(message).build()
+		output.send(new GenericMessage&lt;&gt;(bytes));
+	}
+</code></pre>
+
+<p>If you got better solution, tell me :)</p>
+
+<h3 id="avro-content-type">Avro Content-Type</h3>
+
+<p>My example doesn&rsquo;t include it, but it is a popular Content-Type used with Apache Kafka.</p>
+
+<ol>
+<li><a href="http://docs.spring.io/spring-cloud-stream/docs/current-SNAPSHOT/reference/htmlsingle/#_avro_schema_registry_client_message_converters">Spring Cloud Stream Docs</a></li>
+<li><a href="http://www.beeworks.be/blog/2016/start-streaming-kafka-spring-cloud.html">BeeWorks Blog: Start Streaming with Kafka and Spring Cloud</a></li>
+<li><a href="https://github.com/anywhereinfo/demo">Github: Spring Cloud Stream, Kafka, Avro examples</a></li>
+</ol>
+
+<h3 id="references">References</h3>
+
+<ol>
+<li><a href="https://medium.com/@Oskarr3/implementing-cqrs-using-kafka-and-sarama-library-in-golang-da7efa3b77fe#.razrnz8eh">Implementing CQRS using Kafka and Sarama Library in Golang</a></li>
+<li><a href="https://blog.codecentric.de/en/2016/04/event-driven-microservices-spring-cloud-stream/">Event Driven Microservices with Spring Cloud Stream</a></li>
+<li><a href="https://gist.github.com/rakyll/eec415977f85d50a493ca8472ba97b68">Go 1.8 HTTP/2 Push</a> - in my example it is almost the same</li>
+</ol>
+
+<h3 id="http-2-go-push-bonus-only-for-fun">HTTP/2 Go Push Bonus (only for fun)</h3>
+
+<ol>
+<li>Go 1.8beta2 required</li>
+<li>Run crypto/tls/generate_cert.go to generate cert.pem and key.pem. and put them to the project</li>
+<li>Go to <a href="https://localhost:8082/">https://localhost:8082/</a> (yes, https)</li>
+<li>Resources will be pushed to browser, check Network (devtools)</li>
+</ol>
+
+	</section>
+
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'kgoralski';
+    var disqus_identifier = 'https:\/\/kgoralski.github.io\/post\/kafka-go-kotlin-java\/';
+    var disqus_title = 'Hello World: Apache Kafka \x2b Go, Kotlin \x26 Java';
+    var disqus_url = 'https:\/\/kgoralski.github.io\/post\/kafka-go-kotlin-java\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    <footer class="site-footer">
+	<p class="text">&copy; 2017 - <a href="https://kgoralski.github.io/">Krzysztof Góralski</a>. Released under the MIT license<br>Powered by <a href="//gohugo.io/">Hugo</a> with the <a href="//github.com/digitalcraftsman/hugo-type-theme">Type Theme</a></p>
+</footer>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-89654457-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>

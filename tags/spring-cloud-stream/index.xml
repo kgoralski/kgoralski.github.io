@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kotlin on Krzysztof Góralski</title>
-    <link>https://kgoralski.github.io/tags/kotlin/index.xml</link>
-    <description>Recent content in Kotlin on Krzysztof Góralski</description>
+    <title>Spring Cloud Stream on Krzysztof Góralski</title>
+    <link>https://kgoralski.github.io/tags/spring-cloud-stream/index.xml</link>
+    <description>Recent content in Spring Cloud Stream on Krzysztof Góralski</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>[Krzysztof Góralski](https://kgoralski.github.io/). Released under the MIT license&lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
-    <atom:link href="https://kgoralski.github.io/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kgoralski.github.io/tags/spring-cloud-stream/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hello World: Apache Kafka &#43; Go, Kotlin &amp; Java</title>
@@ -106,50 +106,6 @@ INFO 22360 --- [afka-listener-1] com.example.SampleSink  Kotlin received: Krzysz
 &lt;li&gt;Go to &lt;a href=&#34;https://localhost:8082/&#34;&gt;https://localhost:8082/&lt;/a&gt; (yes, https)&lt;/li&gt;
 &lt;li&gt;Resources will be pushed to browser, check Network (devtools)&lt;/li&gt;
 &lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Kotlin &#43; Spring Boot = Kotlinboot</title>
-      <link>https://kgoralski.github.io/post/kotlinboot/</link>
-      <pubDate>Fri, 30 Dec 2016 21:12:10 +0100</pubDate>
-      
-      <guid>https://kgoralski.github.io/post/kotlinboot/</guid>
-      <description>&lt;p&gt;Another day, another CRUD ;) . Inspired by one of JUG meetings decided to write another example of application.
-This time it is Kotlin and Spring Boot. But it is a quick one. After checking some languages this year I think that I will spend my free time with Golang in 2017 ;)&lt;/p&gt;
-
-&lt;p&gt;Example is here: &lt;a href=&#34;https://github.com/kgoralski/kotlin-springboot-template&#34;&gt;https://github.com/kgoralski/kotlin-springboot-template&lt;/a&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Kotlin
-Spring Boot
-REST JAX-RS and Jersey Proxy Client
-HATEOAS Example
-Sprind Data JPA with H2 Database
-Spring Data NoSQL with Apache Cassandra
-Spring Data REST
-Tests with Spock
-Gradle Kotlin Script with multi modules
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Impressions? Not much, didn&amp;rsquo;t really feel that I&amp;rsquo;m learning new language:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Feels easy to adopt, but still it is a new language. So it needs learning too ;)&lt;/li&gt;
-&lt;li&gt;&amp;lsquo;Better Java&amp;rsquo;? Probably we can use Kotlin like that&lt;/li&gt;
-&lt;li&gt;Less boilerplate&lt;/li&gt;
-&lt;li&gt;Null safety&lt;/li&gt;
-&lt;li&gt;Immutability&lt;/li&gt;
-&lt;li&gt;Data Class! Better than Lombok :)&lt;/li&gt;
-&lt;li&gt;Type Inference&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;when statements&amp;rdquo; (kind of pattern matching)&lt;/li&gt;
-&lt;li&gt;Gotta watchout on empty constructors while using Java Frameworks (Jackson etc.)&lt;/li&gt;
-&lt;li&gt;Intellij IDEA can convert Java to Kotlin&lt;/li&gt;
-&lt;li&gt;Constructor Injection Preference&lt;/li&gt;
-&lt;li&gt;Less annotations?&lt;/li&gt;
-&lt;li&gt;Gradle Kotlin Script - love IDEA code completion (but you need to update Kotlin Plugin for that)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I guess that after some learning time developers will be able to be more productive with Kotlin.&lt;/p&gt;
 </description>
     </item>
     

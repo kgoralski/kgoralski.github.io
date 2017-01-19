@@ -10,6 +10,106 @@
     <atom:link href="https://kgoralski.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Hello World: Apache Kafka &#43; Go, Kotlin &amp; Java</title>
+      <link>https://kgoralski.github.io/post/kafka-go-kotlin-java/</link>
+      <pubDate>Thu, 19 Jan 2017 21:12:10 +0100</pubDate>
+      
+      <guid>https://kgoralski.github.io/post/kafka-go-kotlin-java/</guid>
+      <description>
+
+&lt;p&gt;Check the example here: &lt;a href=&#34;https://github.com/kgoralski/go-kotlin-java-kafka&#34;&gt;https://github.com/kgoralski/go-kotlin-java-kafka&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Java - demo-java-source with Spring Cloud Stream - localhost:8080
+Kotlin - demo-kotlin-sink with Spring Cloud Stream - localhost:8081 (Consumer)
+Go aka Golang - demo-go-sink with Shopify/sarama (Kafka Client) - localhost:8082 (Consumer)
+Apache Kafka as Message Broker
+Go Shopify/sarama - Apache Kafka Client
+Go HTTP/2 Push example (just for fun)
+Gradle
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Running Kafka inside Docker (&lt;a href=&#34;https://github.com/spotify/docker-kafka&#34;&gt;spotify/kafka&lt;/a&gt;) to play with it locally :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker run --name spotifykafka -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=localhost --env ADVERTISED_PORT=9092 spotify/kafka 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to get Shopify/sarama lib - Kafka client:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;go get github.com/Shopify/sarama
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;how-to-run-it&#34;&gt;How to run it&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Run docker spotify/kafka&lt;/li&gt;
+&lt;li&gt;Run Java/Kotlin/Go app from IDE (Prefer IDEA &amp;amp; Gogland)&lt;/li&gt;
+&lt;li&gt;Send request to Java Source App - POST &lt;a href=&#34;http://localhost:8080/message&#34;&gt;http://localhost:8080/message&lt;/a&gt; {&amp;ldquo;name&amp;rdquo;: &amp;ldquo;Krzysztof&amp;rdquo;}&lt;/li&gt;
+&lt;li&gt;Both Go and Kotlin app will print the messages on their consoles, something like this:
+&lt;code&gt;
+INFO 22360 --- [afka-listener-1] com.example.SampleSink  Kotlin received: Krzysztof
+&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code&gt;Golang received: Krzysztof
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;content-type-with-go-application-problem&#34;&gt;Content-Type with Go Application Problem&lt;/h3&gt;
+
+&lt;p&gt;If you have Spring Applications, you can just set content-type inside properties like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;spring.cloud.stream.bindings.output.content-type=application/json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But Go Shopify/sarama client has problem with it, I used binary format, this way:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;spring.cloud.stream.bindings.output.producer.headerMode=raw
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And my source in Java looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;	@PostMapping(path = &amp;quot;/message&amp;quot;, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public @ResponseBody void sendMessage(@RequestBody MessageDto message) throws JsonProcessingException {
+		byte[] bytes = objectMapper.writeValueAsBytes(message);
+
+		// normally you can use something like this instead of bytes :
+		// MessageBuilder.withPayload(message).build()
+		output.send(new GenericMessage&amp;lt;&amp;gt;(bytes));
+	}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you got better solution, tell me :)&lt;/p&gt;
+
+&lt;h3 id=&#34;avro-content-type&#34;&gt;Avro Content-Type&lt;/h3&gt;
+
+&lt;p&gt;My example doesn&amp;rsquo;t include it, but it is a popular Content-Type used with Apache Kafka.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.spring.io/spring-cloud-stream/docs/current-SNAPSHOT/reference/htmlsingle/#_avro_schema_registry_client_message_converters&#34;&gt;Spring Cloud Stream Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.beeworks.be/blog/2016/start-streaming-kafka-spring-cloud.html&#34;&gt;BeeWorks Blog: Start Streaming with Kafka and Spring Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anywhereinfo/demo&#34;&gt;Github: Spring Cloud Stream, Kafka, Avro examples&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@Oskarr3/implementing-cqrs-using-kafka-and-sarama-library-in-golang-da7efa3b77fe#.razrnz8eh&#34;&gt;Implementing CQRS using Kafka and Sarama Library in Golang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.codecentric.de/en/2016/04/event-driven-microservices-spring-cloud-stream/&#34;&gt;Event Driven Microservices with Spring Cloud Stream&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/rakyll/eec415977f85d50a493ca8472ba97b68&#34;&gt;Go 1.8 HTTP/2 Push&lt;/a&gt; - in my example it is almost the same&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;http-2-go-push-bonus-only-for-fun&#34;&gt;HTTP/2 Go Push Bonus (only for fun)&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Go 1.8beta2 required&lt;/li&gt;
+&lt;li&gt;Run crypto/tls/generate_cert.go to generate cert.pem and key.pem. and put them to the project&lt;/li&gt;
+&lt;li&gt;Go to &lt;a href=&#34;https://localhost:8082/&#34;&gt;https://localhost:8082/&lt;/a&gt; (yes, https)&lt;/li&gt;
+&lt;li&gt;Resources will be pushed to browser, check Network (devtools)&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Ratpack</title>
       <link>https://kgoralski.github.io/post/ratpack/</link>
       <pubDate>Mon, 17 Oct 2016 08:41:23 +0100</pubDate>
